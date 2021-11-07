@@ -1,0 +1,208 @@
+<ion-header [fullscreen]="true" id="menu">
+
+  <ion-grid>
+    <ion-row >
+      
+      <ion-col><ion-img src="assets/image/Logo1.png" id="logo"></ion-img></ion-col>
+      <ion-col><ion-button fill="clear" id="menuopc" class="hoverHome" routerLink='/home'>Home</ion-button></ion-col>
+      
+      <ion-col>
+        <div class="dropdown">
+          <ion-button fill="clear" id="menuopc" class="hoverWorks" routerLink='/works'>Works</ion-button>
+          <div class="dropdown-content">
+            <a></a>
+            <a></a>
+            <a routerLink='/hunger-games'>The Hunger games</a>
+            <a routerLink='/catching-fire'>Catching fire</a>
+            <a routerLink='/mockingjay'>Mockingjay</a>
+            <a routerLink='/songbirds-and-snakes'>The Ballad of Songbirds and Snakes</a>
+
+            <a routerLink='/gregor-overlander'>Gregor the Overlander</a>
+            <a routerLink='/gregor-prophecy-bane'>Gregor and the Prophecy of Bane</a>
+            <a routerLink='/gregor-curse-warmbloods'>Gregor and the Curse of the Warmbloods</a>
+            <a routerLink='/gregor-marks-secret'>Gregor and the Marks of Secret</a>
+            <a routerLink='/gregor-code-claw'>Gregor and the Code of Claw</a>
+
+            <a routerLink='/year-of-the-jungle'>Year of the Jungle</a>
+            <a routerLink='/charlie-mc-button'>When Charlie McButton Lost Power</a>
+          </div>
+        </div>
+      </ion-col>
+
+        <ion-col><ion-button fill="clear" id="menuopc" class="hoverBio" routerLink='/biography'>Biography</ion-button></ion-col>
+      <ion-col><ion-button fill="clear" id="menuopc" class="hoverInterview" routerLink='/interview'>Interview</ion-button></ion-col>
+      <ion-col><ion-button fill="clear" id="menuopc" class="hoverFans" routerLink='/fans-asked'>Fans asked</ion-button></ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-header>
+
+
+<ion-content [fullscreen]="true">
+  <div id="container">
+
+    <div id="coverContainer"><ion-img id="coverBook" src="assets/image/gregor5.jpg"></ion-img></div>
+
+    <div id="flanco1">
+      <ion-img src="assets/icon/award.png"></ion-img>
+    </div>
+    <div id="flanco2">
+          <ion-img src="assets/icon/award.png"></ion-img>
+    </div>
+    <div class="SliderAwards">
+      <ion-slides [options]="slideOpts" pager="true" #slider (ionSlidesDidLoad)="slidesDidLoad(slider)" class="swiper">
+        
+        <ion-slide ><ion-text id="slides-awards">A NEW YORK TIMES BESTSELLING <br>SERIES</ion-text></ion-slide>
+        <ion-slide ><ion-text id="slides-awards">A BOOK SENSE BESTSELLING SERIES</ion-text></ion-slide>
+        <ion-slide ><ion-text id="slides-awards">USA TODAY BESTSELLER</ion-text></ion-slide>
+        <ion-slide ><ion-text id="slides-awards">A BOOK SENSE CHILDREN'S PICK</ion-text></ion-slide>
+        <ion-slide ><ion-text id="slides-awards">CCBC CHOICES 2008</ion-text></ion-slide>
+        <ion-slide ><ion-text id="slides-awards">2009 ALSC NOTABLE CHILDREN'S <br>RECORDING</ion-text></ion-slide>
+      </ion-slides>
+    </div>
+
+    <div id="sinopsis">
+      Everyone in the Underland has been taking great pains to keep The Prophecy of Time from Gregor. 
+      Gregor knows it must say something awful but he never imagined just how awful: It calls for the 
+      warrior's death. Now, with an army of rats approaching, and his mom and sister still in Regalia, 
+      Gregor the warrior must gather up his courage to help defend Regalia and get his family home safely. 
+      The entire existence of the Underland is in Gregor's hands, and time is running out. There is a 
+      code to be cracked, a mysterious new princess, Gregor's burgeoning dark side, and a war to end all wars.
+    </div>
+    
+    <div id="BuyTitleC"><p id="BuyTitle">BUY IT</p>
+    </div>
+
+    <div id="buy">
+      <div id="b1">
+        <a href="https://www.penguinrandomhouse.com/books/30186/the-underland-chronicles-book-five-gregor-and-the-code-of-claw-by-suzanne-collins/">
+          <ion-img id="buy1" src="assets/icon/penguinLogo.png"></ion-img>
+        </a>
+      </div>
+
+      <div id="b2">
+        <a href="https://www.amazon.com/Gregor-Code-Claw-Underland-Chronicles/dp/0439791448/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=&sr=">
+          <ion-img id="buy2" src="assets/icon/amazonLogo.png"></ion-img>
+        </a>
+      </div>
+
+      <div id="b3">
+        <a href="https://www.barnesandnoble.com/w/gregor-and-the-code-of-claw-suzanne-collins/1100295330?ean=9780439791441">
+          <ion-img id="buy3" src="assets/icon/barnesLogo.png"></ion-img>
+        </a>
+      </div>
+      <div id="b4">
+        <a href="https://www.booksamillion.com/p/Gregor-Code-Claw-Underland-Chronicles/Suzanne-Collins/9780439791441?id=8327017192099">
+          <ion-img id="buy4" src="assets/icon/bamLogo.png"></ion-img>
+        </a>
+      </div>
+    </div>
+  
+      <div class="SliderCritics">
+        <ion-slides [options]="slideOptsCritics" pager="true" #slider (ionSlidesDidLoad)="slidesDidLoad(slider)" class="swiperCritics">
+          <ion-slide ><ion-text id="slides-critics">
+            "Perhaps Collins's greatest achievement in these tales is the effortless introduction of 
+            weighty geopolitical ethics into rip-roaring adventure. It seems as elusive in the 
+            Underland as up above, but Gregor and his companions, including the unforgettable rat 
+            Ripred, may yet find a way. The resolution is bittersweet but faintly hopeful—a fitting 
+            end for an unflinchingly gutsy series whose deftly drawn characters have always lived 
+            dangerously."
+            <br><br><i>Kirkus Reviews</i>
+          </ion-text></ion-slide>
+
+          <ion-slide ><ion-text id="slides-critics">
+            "Collins delivers more of what's made this series so compelling: vivid action scenes, 
+            detailed military machinations, and nuanced character development. The plot moves 
+            swiftly but with deliberation, reflecting the Regalian leaders' strategic chess-game 
+            approach to the conflict. In the end, though the unimaginable doesn't happen, no one 
+            is without physical and emotional scars. Readers, too, will be battle-weary but buoyed 
+            by Collins's ultimate message of hope. As the Underlanders would say: fly you high, Gregor."
+            <br><br><i>The Horn Book Magazine</i>
+          </ion-text></ion-slide>
+
+          <ion-slide ><ion-text id="slides-critics">
+            "Consistent quality has been a hallmark of this series. Although the story line has 
+            gradually become darker, Gregor maintains his endearing qualities as a reluctant hero. 
+            His love for his family and his compassion for his friends never flag. The world of 
+            Regalia, located below the streets of New York City, presents a magical realm of 
+            possibilities for young readers of this excellent acquisition for any library."
+            <br><br><i>VOYA</i>
+          </ion-text></ion-slide>
+
+          <ion-slide ><ion-text id="slides-critics">
+            "A realistic conclusion, including the loss of old friends and a message about the 
+            importance of peace and trust, leaves readers with a sense of optimism about the future 
+            of the Underland. Friends and foes from the previous volumes reappear here, and Gregor's 
+            self-doubts and changing relationship with Luxa add to his depth as a protagonist. Fans 
+            of the series will find much to appreciate, from an enigmatic prophecy to the complex 
+            rat Ripred, and they'll be drawn in by Collins's tight pacing and sense of urgency."
+            <br><br><i>School Library Journal</i>
+          </ion-text></ion-slide>
+
+          <ion-slide ><ion-text id="slides-critics">
+            "Another outstanding, riveting Gregor fantasy."
+            <br><br><i>Midwest Book Review</i>
+          </ion-text></ion-slide>
+
+          <ion-slide ><ion-text id="slides-critics">
+            "The book is fast-paced, easy to read and contains plenty of battle scene and gore for 
+            young readers. But it also deals with a boy suddenly forced to make major decisions and 
+            face the true and terrible realism of war. The so-called "traitor rat," Ripred reappears 
+            and we learn the story behind his decision to join the forces opposed to The Bane. I find 
+            Ripred to be one of the most fascinating characters in the book.<br>
+            Armchair Interviews says: Fans of the earlier four books will find plenty of enjoy with 
+            this one.."
+            <br><br><i>Armchair Interviews</i>
+          </ion-text></ion-slide>
+
+        </ion-slides>
+
+    </div>
+    <br><br><br><br><br><br><br>
+  </div>
+
+  <ion-fab vertical="center" horizontal="end" slot="fixed"  >
+    <ion-fab-button color="light">
+      <ion-icon name="globe-outline" color="dark"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="top">
+      <ion-fab-button href="https://www.authorsguild.org/"><ion-img id="fab" src="assets/icon/authors.png"></ion-img></ion-fab-button>
+      <ion-fab-button href="https://www.penguin.com/"><ion-img id="fab" src="assets/icon/penguin.png"></ion-img></ion-fab-button>
+      <ion-fab-button href="https://www.amazon.com/"><ion-img id="fab" src="assets/icon/amazon.png"></ion-img></ion-fab-button>
+    </ion-fab-list>
+    <ion-fab-list side="bottom">
+      <ion-fab-button href="https://www.barnesandnoble.com/"><ion-img id="fab2" src="assets/icon/barnes.png"></ion-img></ion-fab-button>
+      <ion-fab-button href="https://www.indiebound.org/"><ion-img id="fab" src="assets/icon/indie.png"></ion-img></ion-fab-button>
+      <ion-fab-button href="https://www.booksamillion.com/"><ion-img id="fab2" src="assets/icon/BAM.png"></ion-img></ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+</ion-content>
+
+
+<ion-footer id="pie">
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <div id="alignI">
+            Created for educational purposes
+          </div>
+        </ion-col>
+        
+        <ion-col >
+          <div id="alignC">
+            <ion-img src="assets/image/scholastic.png" id="logoPie"> </ion-img>
+            <br>TM & (c) 2021 Scholastic Inc. All Rights Reserved.
+          </div>
+        </ion-col>
+
+        <ion-col>
+          <div id="alignD">
+            <ion-button fill="clear" id="sign" class="sign button1" routerLink='/sign-in-up'>
+              <a id="s">SIGN</a>
+              <ion-img id="signIcon" src="assets/icon/derecha.png"></ion-img>
+              <!--<ion-icon slot="end" name="chevron-forward-outline"></ion-icon>-->
+            </ion-button>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+</ion-footer>

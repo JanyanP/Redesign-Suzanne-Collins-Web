@@ -1,0 +1,162 @@
+#container{
+    height: 130%;
+}
+
+#sinopsis{
+    margin-left: 13%;
+    margin-top: 3%;
+    width: 40% !important;
+    height: 24% !important;
+    font-family: 'Cambria';
+    font-size: large;
+    text-align: justify;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    //background-color: #fed703;
+}
+
+//BUY LINKS
+#buy{
+    width: 40%;
+    height: 6.5%;
+    margin-left: 13%;
+    margin-top: 2%;
+    display: flex;
+    align-content: center;
+    //background-color: rgb(171, 206, 14);
+}
+#b1{
+    height: 100%;
+    width: 25%;
+    //background-color: #fed703;
+    position: relative;
+}
+#buy1{
+    height: 100%;
+    position: absolute;  
+    top: 0;  
+    bottom: 0;  
+    left: 0;  
+    right: 0;  
+    margin: auto;
+}
+#b2{
+    margin-left: 4%;
+    height: 100%;
+    width: 23%;
+    //background-color: #1346a5;
+    position: relative;
+}
+#buy2{
+    height: 65%;
+    position: absolute;  
+    top: 0;  
+    bottom: 0;  
+    left: 0;  
+    right: 0;  
+    margin: auto;
+}
+#b3{
+    margin-left: 4%;
+    height: 100%;
+    width: 19%;
+    //background-color: #b15226;
+    position: relative;
+}
+#buy3{
+    position: absolute;  
+    top: 0;  
+    bottom: 0;  
+    left: 0;  
+    right: 0;  
+    margin: auto;
+    height: 100%;
+}
+#b4{
+    margin-left: 4%;
+    height: 100%;
+    width: 21%;
+    //background-color: aqua;
+    position: relative;
+
+}
+#buy4{
+    position: absolute;  
+    top: 0;  
+    bottom: 0;  
+    left: 0;  
+    right: 0;  
+    margin: auto;
+    height: 75%;
+}
+#BuyTitleC{
+    width: 40%;
+    margin-left: 13%;
+    height: fit-content;
+    margin-top: 1%;
+    
+  }
+#BuyTitle{
+    font-family: 'Daytona';
+    font-size: xx-large;
+    text-align: center;
+    text-decoration: none;
+    color: #FFFFFF;
+    text-shadow: 0.5px 0 0 #fed703, -0.5px 0 0 #fed703, 0 0.5px 0 #fed703, 0 -0.5px 0 #fed703, 
+    0.5px 0.5px #fed703, -0.5px -0.5px 0 #fed703, 0.5px -0.5px 0 #fed703, -0.5px 0.5px 0 #fed703;
+  }
+
+//COVER
+#coverContainer{
+    width: 29%;
+    height: 45%;
+    margin-right: 13%;
+    float:right;
+    position: relative;
+    margin-top: 3%;
+    //background-color: aquamarine;
+}
+#coverBook{
+    width: 100%;
+    height: 100%;
+    float: right;
+}
+
+//CRITICS SLIDER
+.SliderCritics{
+    background-color: #ffffff;
+    margin-left: 25%;
+    margin-top: 10%;
+    width: 50%;
+    height: 35%;
+    border-radius: 30px;
+    //background-color: #fed703;
+}
+.swiperCritics{
+    padding-bottom:4%;
+    display: flex;
+    align-items: center;
+    
+}
+#slides-critics{
+    font-family: 'Cambria';
+    font-size: medium;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 3%;
+    padding-left: 5%;
+    padding-right: 5%;
+    color: #000000;
+}
+#slides-critics2{
+    font-family: 'Cambria';
+    font-size: small;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 3%;
+    padding-left: 5%;
+    padding-right: 5%;
+    color: #000000;
+}
+

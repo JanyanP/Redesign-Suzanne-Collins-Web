@@ -1,0 +1,29 @@
+#container{
+    background-color: #101010;
+    height: auto;
+}
+
+.centered {
+    height: auto;
+    position: absolute;
+    //top: 50%;
+    //transform: translateY(-50%);
+    display:flex;
+    align-items: center;
+    margin-top: 3%;
+  }
+
+#image{
+    width: 20%;
+    margin-left: 5%;
+}
+
+#bio{
+    margin-left: 30%;
+    font-size: larger;
+    font-family: 'Cambria';
+    text-decoration: none;
+    text-align: justify;
+    width: 65%;
+    margin-top: 3%;
+}

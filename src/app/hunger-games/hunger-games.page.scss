@@ -1,0 +1,229 @@
+#container{
+    height:110%;
+}
+
+//AWARDS
+.SliderAwards{
+    margin-left: 18%;
+    margin-top: 3%;
+    width: 30%;
+    height: 12% !important;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+}
+.swiper{
+    padding-bottom:4%;
+    display: flex;
+    align-items: center;
+}
+#slides-awards{
+    color: #000000;
+    font-family: 'DaytonaBold';
+    font-size: large;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 4%;
+    padding-left: 3%;
+    padding-right: 3%;
+
+}
+#flanco1{
+    position:absolute;
+    margin-top: 3%;
+    width: 3%;
+    height: 13%;
+    display: flex;
+    align-items: center;
+    margin-left: 13.5%;
+}
+#flanco2{
+    position:absolute;
+    margin-top: 3%;
+    width: 3%;
+    height: 13%;
+    display: flex;
+    align-items: center;
+    margin-left: 49.5%;
+}
+
+
+//SINOPSIS
+#sinopsis{
+    margin-left: 13%;
+    margin-top: 1%;
+    width: 40% !important;
+    height: 35% !important;
+    font-family: 'Cambria';
+    font-size: large;
+    text-align: justify;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    //background-color: #fed703;
+}
+
+//BUY LINKS
+#buy{
+    width: 40%;
+    height: 8%;
+    margin-left: 13%;
+    margin-top: 1%;
+    display: flex;
+    align-content: center;
+    //background-color:aqua;
+}
+#b1{
+    height: 100%;
+    width: 23%;
+    //background-color: #1346a5;
+    position: relative;
+    margin-left: 17.5%;
+    margin-right: 17.5%;
+}
+#buy1{
+    height: 65%;
+    position: absolute;  
+    top: 0;  
+    bottom: 0;  
+    left: 0;  
+    right: 0;  
+    margin: auto;
+}
+#b2{
+
+    height: 100%;
+    width: 21%;
+    //background-color: #b15226;
+    position: relative;
+}
+#buy2{
+    position: absolute;  
+    top: 0;  
+    bottom: 0;  
+    left: 0;  
+    right: 0;  
+    margin: auto;
+    height: 100%;
+}
+#b3{
+    height: 100%;
+    width: 21%;
+    //background-color: aqua;
+    position: relative;
+
+}
+#buy3{
+    position: absolute;  
+    top: 0;  
+    bottom: 0;  
+    left: 0;  
+    right: 0;  
+    margin: auto;
+    height: 75%;
+}
+#BuyTitleC{
+    width: 40%;
+    margin-left: 13%;
+    height: fit-content;
+    margin-top: 1%;
+    
+  }
+#BuyTitle{
+    font-family: 'Daytona';
+    font-size: xx-large;
+    text-align: center;
+    text-decoration: none;
+    color: #FFFFFF;
+    text-shadow: 0.5px 0 0 #fed703, -0.5px 0 0 #fed703, 0 0.5px 0 #fed703, 0 -0.5px 0 #fed703, 
+    0.5px 0.5px #fed703, -0.5px -0.5px 0 #fed703, 0.5px -0.5px 0 #fed703, -0.5px 0.5px 0 #fed703;
+  }
+
+//COVER
+#coverContainer{
+    width: 29%;
+    height: 66%;
+    margin-right: 13%;
+    float:right;
+    position: relative;
+    margin-top: 3%;
+}
+#coverBook{
+    width: 100%;
+    height: 100%;
+    float: right;
+}
+
+//CRITICS SLIDER
+.SliderCritics{
+    background-color: #FFFFFF;
+    margin-left: 25%;
+    margin-top: 6%;
+    width: 50%;
+    height: 25%;
+    border-radius: 30px;
+}
+.swiperCritics{
+    padding-bottom:4%;
+    display: flex;
+    align-items: center;
+    
+}
+#slides-critics{
+    font-family: 'Cambria';
+    font-size: medium;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 3%;
+    padding-left: 5%;
+    padding-right: 5%;
+    color: #000000;
+}
+
+//TRAILER REPRODUCTOR
+#reproductor{
+    width:100%;
+    text-align: center;
+    font-family: 'Daytona';
+    font-size: large;
+    margin-top: 4%;
+}
+
+//SOCIAL MEDIA
+#contenedorSocial{
+    height: 150px;
+    background-color: #101010;
+    text-align: center;
+    font-family: 'Daytona';
+    font-size: large;
+    color: #FFFFFF;
+    margin-top: 0%;
+    padding-top: 30px;
+}
+#contenedorIcon{
+    width: 12%;
+    height: 40px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin-left: 44%;
+    margin-top: 1%;
+    margin-right: 44%;
+}
+#SM1{
+    height: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#SM2{
+    height: 40px ;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#SM3{
+    height: 40px ;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#sm{
+    height: 40px;
+}

@@ -1,0 +1,121 @@
+
+<ion-header [fullscreen]="true" id="menu">
+
+  <ion-grid>
+    <ion-row >
+      
+      <ion-col><ion-img src="assets/image/Logo1.png" id="logo"></ion-img></ion-col>
+      <ion-col><ion-button fill="clear" id="menuopc" class="hoverHome" routerLink='/home'>Home</ion-button></ion-col>
+      
+      <ion-col>
+        <div class="dropdown">
+          <ion-button fill="clear" id="menuopc" class="hoverWorks" >Works</ion-button>
+          <div class="dropdown-content">
+            <a></a>
+            <a></a>
+            <a routerLink='/hunger-games'>The Hunger games</a>
+            <a routerLink='/catching-fire'>Catching fire</a>
+            <a routerLink='/mockingjay'>Mockingjay</a>
+            <a routerLink='/songbirds-and-snakes'>The Ballad of Songbirds and Snakes</a>
+
+            <a routerLink='/gregor-overlander'>Gregor the Overlander</a>
+            <a routerLink='/gregor-prophecy-bane'>Gregor and the Prophecy of Bane</a>
+            <a routerLink='/gregor-curse-warmbloods'>Gregor and the Curse of the Warmbloods</a>
+            <a routerLink='/gregor-marks-secret'>Gregor and the Marks of Secret</a>
+            <a routerLink='/gregor-code-claw'>Gregor and the Code of Claw</a>
+
+            <a routerLink='/year-of-the-jungle'>Year of the Jungle</a>
+            <a routerLink='/charlie-mc-button'>When Charlie McButton Lost Power</a>
+          </div>
+        </div>
+      </ion-col>
+
+        <ion-col><ion-button fill="clear" id="menuopc" class="hoverBio" routerLink='/biography'>Biography</ion-button></ion-col>
+      <ion-col><ion-button fill="clear" id="menuopc" class="hoverInterview" routerLink='/interview'>Interview</ion-button></ion-col>
+      <ion-col><ion-button fill="clear" id="menuopc" class="hoverFans" routerLink='/fans-asked'>Fans asked</ion-button></ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div id="container">
+    
+    <ion-img  id="image" src="assets/image/suzanne.jpg" class="centered"></ion-img>
+  
+    <p id="bio" >
+      Suzanne developed an early interest in writing as a young girl. Pursuing her interests, she attended the Alabama School
+      of Fine Arts and later completed an M.F.A. degree in Dramatic Writing from New York University.
+      <br>      <br>
+      In 1991, she began her career as a writer for children’s television. Some of her most significant works include working on 
+      the Nickelodeon channel shows. Significant milestone of her career also include being the head writer at Scholastic 
+      Entertainment for Clifford’s Puppy Days.
+      <br>      <br>
+      Collins was encouraged and inspired to try her hands on writing children’s books after a meeting with children’s author 
+      James Proimos, Suzanne Collins began her career in children’s literature with Gregor the Overlander (2003), the first 
+      book of the New York Times bestselling, The Underland Chronicles series. These books were targeted for middle grade readers.
+      Collins produced four more books for the series In 2005, Collins also published a rhyming picture book, When Charlie 
+      McButton Lost Power followed by a sequel, When Charlie McButton Gained Power, published in 2009.
+      <br>      <br>
+      Collins was first recognized as a distinguished children’s writer when she published, Catching Fire in 2009. This book was
+      the second book of another series entitled The Hunger Games. The trilogy series targeted for ages 12 and above, became an
+        instant bestseller and was placed at the number one position simultaneously on the bestselling lists. As a result of the
+        popularity Collins gained from this series, she was named amongst Time magazine’s list of most influential people of 2010.
+        <br>      <br>
+      In 2016, she was presented the Authors Guild Award for Distinguished Service to the Literary Community for exemplifying the
+      unique power of young people's literature to change lives and create lifelong book lovers.
+    </p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+  </div>
+
+  <ion-fab vertical="center" horizontal="end" slot="fixed" >
+    <ion-fab-button color="light">
+      <ion-icon name="globe-outline" color="dark"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="top">
+      <ion-fab-button><ion-img id="fab" src="assets/icon/authors.png" ></ion-img></ion-fab-button>
+      <ion-fab-button><ion-img id="fab" src="assets/icon/penguin.png"></ion-img></ion-fab-button>
+      <ion-fab-button><ion-img id="fab" src="assets/icon/amazon.png"></ion-img></ion-fab-button>
+    </ion-fab-list>
+    <ion-fab-list side="bottom">
+      <ion-fab-button><ion-img id="fab2" src="assets/icon/barnes.png"></ion-img></ion-fab-button>
+      <ion-fab-button><ion-img id="fab" src="assets/icon/indie.png"></ion-img></ion-fab-button>
+      <ion-fab-button><ion-img id="fab2" src="assets/icon/BAM.png"></ion-img></ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+</ion-content>
+
+
+<ion-footer id="pie">
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <div id="alignI">
+            Created for educational purposes
+          </div>
+        </ion-col>
+        
+        <ion-col >
+          <div id="alignC">
+            <ion-img src="assets/image/scholastic.png" id="logoPie"> </ion-img>
+            <br>TM & (c) 2021 Scholastic Inc. All Rights Reserved.
+          </div>
+        </ion-col>
+
+        <ion-col>
+          <div id="alignD">
+            <ion-button fill="clear" id="sign" class="sign button1" routerLink='/sign-in-up'>
+              <a id="s">SIGN</a>
+              <ion-img id="signIcon" src="assets/icon/derecha.png"></ion-img>
+              <!--<ion-icon slot="end" name="chevron-forward-outline"></ion-icon>-->
+            </ion-button>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+</ion-footer>

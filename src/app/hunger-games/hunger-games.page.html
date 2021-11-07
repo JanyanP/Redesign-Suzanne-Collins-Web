@@ -1,0 +1,285 @@
+
+<ion-header [fullscreen]="true" id="menu">
+
+  <ion-grid>
+    <ion-row >
+      
+      <ion-col><ion-img src="assets/image/Logo1.png" id="logo"></ion-img></ion-col>
+      <ion-col><ion-button fill="clear" id="menuopc" class="hoverHome" routerLink='/home'>Home</ion-button></ion-col>
+      
+      <ion-col>
+        <div class="dropdown">
+          <ion-button fill="clear" id="menuopc" class="hoverWorks" routerLink='/works'>Works</ion-button>
+          <div class="dropdown-content">
+            <a></a>
+            <a></a>
+            <a routerLink='/hunger-games'>The Hunger games</a>
+            <a routerLink='/catching-fire'>Catching fire</a>
+            <a routerLink='/mockingjay'>Mockingjay</a>
+            <a routerLink='/songbirds-and-snakes'>The Ballad of Songbirds and Snakes</a>
+
+            <a routerLink='/gregor-overlander'>Gregor the Overlander</a>
+            <a routerLink='/gregor-prophecy-bane'>Gregor and the Prophecy of Bane</a>
+            <a routerLink='/gregor-curse-warmbloods'>Gregor and the Curse of the Warmbloods</a>
+            <a routerLink='/gregor-marks-secret'>Gregor and the Marks of Secret</a>
+            <a routerLink='/gregor-code-claw'>Gregor and the Code of Claw</a>
+
+            <a routerLink='/year-of-the-jungle'>Year of the Jungle</a>
+            <a routerLink='/charlie-mc-button'>When Charlie McButton Lost Power</a>
+          </div>
+        </div>
+      </ion-col>
+
+        <ion-col><ion-button fill="clear" id="menuopc" class="hoverBio" routerLink='/biography'>Biography</ion-button></ion-col>
+      <ion-col><ion-button fill="clear" id="menuopc" class="hoverInterview" routerLink='/interview'>Interview</ion-button></ion-col>
+      <ion-col><ion-button fill="clear" id="menuopc" class="hoverFans" routerLink='/fans-asked'>Fans asked</ion-button></ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-header>
+
+
+<ion-content [fullscreen]="true">
+  <div id="container">
+
+    <div id="coverContainer"><ion-img id="coverBook" src="assets/image/hunger1.jpeg"></ion-img></div>
+
+    <div id="flanco1">
+      <ion-img src="assets/icon/award.png"></ion-img>
+    </div>
+    <div id="flanco2">
+      <ion-img src="assets/icon/award.png"></ion-img>
+    </div>
+    <div class="SliderAwards">
+      <ion-slides [options]="slideOpts" pager="true" #slider (ionSlidesDidLoad)="slidesDidLoad(slider)" class="swiper">
+        <ion-slide ><ion-text id="slides-awards">#1 NEW YORK TIMES BESTSELLER</ion-text></ion-slide>
+        <ion-slide ><ion-text id="slides-awards">#1 USA TODAY BESTSELLER</ion-text></ion-slide>
+        <ion-slide ><ion-text id="slides-awards">WALL STREET JOURNAL BESTSELLER</ion-text></ion-slide>
+        <ion-slide ><ion-text id="slides-awards">PUBLISHERS WEEKLY BESTSELLER</ion-text></ion-slide>
+        <ion-slide ><ion-text id="slides-awards">PUBLISHERS WEEKLY'S BEST BOOKS OF 2008: CHILDREN'S FICTION</ion-text></ion-slide>
+        <ion-slide ><ion-text id="slides-awards">NEW YORK TIMES NOTABLE CHILDREN'S BOOK OF 2008</ion-text></ion-slide>
+        <ion-slide ><ion-text id="slides-awards">CCBC CHOICES 2009</ion-text></ion-slide>
+        <ion-slide ><ion-text id="slides-awards">A NEW YORK TIMES EDITORS' CHOICE</ion-text></ion-slide>
+        <ion-slide ><ion-text id="slides-awards">LA TIMES FAVORITE CHILDREN'S BOOKS, 2008</ion-text></ion-slide>
+        <ion-slide ><ion-text id="slides-awards">A BOOKLIST EDITORS' CHOICE, 2008</ion-text></ion-slide>
+        <ion-slide ><ion-text id="slides-awards">SCHOOL LIBRARY JOURNAL BEST BOOKS Of 2008</ion-text></ion-slide>
+        <ion-slide ><ion-text id="slides-awards">AMAZON BEST BOOKS OF 2008: TOP 100 EDITORS' PICK, TOP 10 BOOKS: TEENS</ion-text></ion-slide>
+        <ion-slide ><ion-text id="slides-awards">BARNES & NOBLE BEST BOOKS OF 2008 FOR TEENS AND KIDS</ion-text></ion-slide>
+      </ion-slides>
+    </div>
+    
+    
+    <div id="sinopsis">
+      Katniss is a 16-year-old girl living with her mother and younger sister in the poorest 
+      district of Panem, the remains of what used be North America. Long ago the districts 
+      waged war on the Capitol and were defeated. As part of the surrender terms, each district 
+      agreed to send one boy and one girl to appear in an annual televised event called, 
+      "The Hunger Games." The terrain, rules, and level of audience participation may change 
+      but one thing is constant: kill or be killed. When her sister is chosen by lottery, 
+      Katniss steps up to go in her place.
+    </div>
+    
+    <div id="BuyTitleC"><p id="BuyTitle">BUY IT</p>
+    </div>
+
+    <div id="buy">
+      
+      <div id="b2">
+        <a href="https://www.barnesandnoble.com/w/hunger-games-suzanne-collins/1100171585?ean=9780439023528">
+          <ion-img id="buy2" src="assets/icon/barnesLogo.png"></ion-img>
+        </a>
+      </div>
+
+      <div id="b1">
+        <a href="https://www.amazon.com/-/es/Suzanne-Collins/dp/0439023483">
+          <ion-img id="buy1" src="assets/icon/amazonLogo.png"></ion-img>
+        </a>
+      </div>
+
+      <div id="b3">
+        <a href="https://www.booksamillion.com/p/Hunger-Games-Book-One/Suzanne-Collins/9780439023528?id=8327017192099&__cf_chl_jschl_tk__=pmd_pnrBCPUIJ3AYBIxl8vw7VQL85zgLS2ytjavhgQmceIU-1632707252-0-gqNtZGzNAmWjcnBszQp9">
+          <ion-img id="buy3" src="assets/icon/bamLogo.png"></ion-img>
+        </a>
+      </div>
+    </div>
+    
+    <div id="container">
+
+      <div class="SliderCritics">
+        <ion-slides [options]="slideOptsCritics" pager="true" #slider (ionSlidesDidLoad)="slidesDidLoad(slider)" class="swiperCritics">
+          <ion-slide ><ion-text id="slides-critics">
+            "What happens if we choose entertainment over humanity? In Collins's world, we'll be obsessed with grooming, 
+            we'll talk funny, and all our sentences will end with the same rise as questions. When Katniss is sent to 
+            stylists to be made more telegenic before she competes, she stands naked in front of them, strangely 
+            unembarrassed. "They're so unlike people that I'm no more self-conscious than if a trio of oddly colored 
+            birds were pecking around my feet," she thinks. In order not to hate these creatures who are sending her to 
+            her death, she imagines them as pets. It isn't just the contestants who risk the loss of their humanity. It 
+            is all who watch."
+            <br><br><i>Publishers Weekly, Megan Whalen Turner</i>, STARRED REVIEW
+          </ion-text></ion-slide>
+
+          <ion-slide ><ion-text id="slides-critics">
+            "...brilliantly plotted and perfectly paced...a futuristic novel every bit as good and as allegorically rich as 
+            Scott Westerfeld's 'Uglies' books."
+            <br><br><i>The New York Times, John Green</i>
+          </ion-text></ion-slide>
+
+          <ion-slide ><ion-text id="slides-critics">
+            "[The Hunger Games] is a violent, jarring, speed-rap of a novel that generates nearly constant suspense...I couldn't 
+            stop reading it." 
+            <br><br><i>Stephen King, Entertainment Weekly Review</i>
+          </ion-text></ion-slide>
+
+          <ion-slide ><ion-text id="slides-critics">
+            "...enthralling, imaginative and creepy..."
+            <br><br><i>Los Angeles Times</i>
+          </ion-text></ion-slide>
+
+          <ion-slide ><ion-text id="slides-critics">
+            "Collins's characters are completely realistic and sympathetic as they 
+            form alliances and friendships in the face of overwhelming odds; the plot 
+            is tense, dramatic, and engrossing. This book will definitely resonate with 
+            the generation raised on reality shows like "Survivor" and "American 
+            Gladiator."
+            <br><br><i>School Library Journal</i>, STARRED REVIEW
+          </ion-text></ion-slide>
+
+          <ion-slide ><ion-text id="slides-critics">
+            "[A] plot-driven blend of suspense, science fiction, and romance."
+            <br><br><i>USA Today</i>
+          </ion-text></ion-slide>
+
+          <ion-slide ><ion-text id="slides-critics">
+            "The plot is front and center here—the twists and turns are addictive, particularly 
+            when the romantic subplot ups the ante—yet the Capitol's oppression and 
+            exploitation of the districts always simmers just below the surface, waiting to be 
+            more fully explored in future volumes. Collins has written a compulsively readable 
+            blend of science fiction, survival story, unlikely romance, and social commentary."
+            <br><br><i>Horn Book</i>, STARRED REVIEW
+          </ion-text></ion-slide>
+
+          <ion-slide ><ion-text id="slides-critics">
+            "Populated by three dimensional characters, this is 
+            a superb tale of physical adventure, political suspense, and romance."
+            <br><br><i>Booklist</i>, STARRED REVIEW
+          </ion-text></ion-slide>
+
+          <ion-slide ><ion-text id="slides-critics">
+            "I was so obsessed with this book that I had to take it with me out to dinner 
+            and hide it under the edge of the table so I wouldn't have to stop reading.  
+            The story kept me up for several nights in a row, because even after I was 
+            finished, I just lay in bed wide awake thinking about it...The Hunger Games 
+            is amazing."
+            <br><br><i>Stephenie Meyer</i>
+          </ion-text></ion-slide>
+          
+          <ion-slide ><ion-text id="slides-critics">
+            "[A] stylish postmodern 'Lost' in direct collision with 'Lord of the Flies.'"
+            <br><br><i>The Wall Street Journal, Katie Roiphe</i>
+          </ion-text></ion-slide>
+          
+          <ion-slide ><ion-text id="slides-critics">
+            "Themes of government control, "big brother," and personal 
+            independence are explored amidst a thrilling adventure that will appeal to 
+            science fiction, survival, and adventure readers. The suspense of this 
+            powerful novel will keep the reader glued to the page long after bedtime."
+            <br><br><i>VOYA, Deborah L. Dubois</i>
+          </ion-text></ion-slide>
+          
+          <ion-slide ><ion-text id="slides-critics">
+            "The Hunger Games is as close to perfect an adventure novel as I've ever read. I 
+            could not put it down. Collins has transformed the ancient Labyrinth myth into a 
+            terrifyingly believable tale of future America. Readers will be hungry for more."
+            <br><br><i>Rick Riordan</i>
+          </ion-text></ion-slide>
+          
+          <ion-slide ><ion-text id="slides-critics">
+            "Impressive world-building, breathtaking action and clear philosophical 
+            concerns make this volume, the beginning of a planned trilogy, as good as 
+            The Giver and more exciting."
+              <br><br><i>Kirkus</i>, STARRED REVIEW
+            </ion-text></ion-slide>
+        
+        </ion-slides>
+      </div>
+
+      <div id="reproductor">
+        <ion-text>Watch the movie adpatation trailer!</ion-text><br><br>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/mfmrPu43DF8" 
+        title="YouTube video player" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div id="contenedorSocial">
+        <ion-text>The Hunger Games Official Social Media</ion-text>
+        <br>
+        <div id="contenedorIcon">
+          <div id="SM1">
+            <a href="https://www.facebook.com/TheHungerGames/">
+              <ion-img id="sm" src="assets/icon/facebook.png"></ion-img>
+            </a>
+          </div>
+
+          <div id="SM2">
+            <a href="https://twitter.com/TheHungerGames">
+              <ion-img id="sm" src="assets/icon/twitter.png"></ion-img>
+            </a>
+          </div>
+
+          <div id="SM3">
+            <a href="https://www.instagram.com/thehungergames/">
+              <ion-img id="sm" src="assets/icon/instagram.png"></ion-img>
+            </a>
+          </div>
+
+        </div>
+      </div>
+      <br>.<br>.<br>.<br>.<br>
+    </div>
+    
+  </div>
+
+  <ion-fab vertical="center" horizontal="end" slot="fixed"  >
+    <ion-fab-button color="light">
+      <ion-icon name="globe-outline" color="dark"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="top">
+      <ion-fab-button href="https://www.authorsguild.org/"><ion-img id="fab" src="assets/icon/authors.png"></ion-img></ion-fab-button>
+      <ion-fab-button href="https://www.penguin.com/"><ion-img id="fab" src="assets/icon/penguin.png"></ion-img></ion-fab-button>
+      <ion-fab-button href="https://www.amazon.com/"><ion-img id="fab" src="assets/icon/amazon.png"></ion-img></ion-fab-button>
+    </ion-fab-list>
+    <ion-fab-list side="bottom">
+      <ion-fab-button href="https://www.barnesandnoble.com/"><ion-img id="fab2" src="assets/icon/barnes.png"></ion-img></ion-fab-button>
+      <ion-fab-button href="https://www.indiebound.org/"><ion-img id="fab" src="assets/icon/indie.png"></ion-img></ion-fab-button>
+      <ion-fab-button href="https://www.booksamillion.com/"><ion-img id="fab2" src="assets/icon/BAM.png"></ion-img></ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+</ion-content>
+
+
+<ion-footer id="pie">
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <div id="alignI">
+            Created for educational purposes
+          </div>
+        </ion-col>
+        
+        <ion-col >
+          <div id="alignC">
+            <ion-img src="assets/image/scholastic.png" id="logoPie"> </ion-img>
+            <br>TM & (c) 2021 Scholastic Inc. All Rights Reserved.
+          </div>
+        </ion-col>
+
+        <ion-col>
+          <div id="alignD">
+            <ion-button fill="clear" id="sign" class="sign button1" routerLink='/sign-in-up'>
+              <a id="s">SIGN</a>
+              <ion-img id="signIcon" src="assets/icon/derecha.png"></ion-img>
+              <!--<ion-icon slot="end" name="chevron-forward-outline"></ion-icon>-->
+            </ion-button>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+</ion-footer>

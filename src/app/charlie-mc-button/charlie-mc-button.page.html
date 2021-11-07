@@ -1,0 +1,177 @@
+<ion-header [fullscreen]="true" id="menu">
+
+  <ion-grid>
+    <ion-row >
+      
+      <ion-col><ion-img src="assets/image/Logo1.png" id="logo"></ion-img></ion-col>
+      <ion-col><ion-button fill="clear" id="menuopc" class="hoverHome" routerLink='/home'>Home</ion-button></ion-col>
+      
+      <ion-col>
+        <div class="dropdown">
+          <ion-button fill="clear" id="menuopc" class="hoverWorks" routerLink='/works'>Works</ion-button>
+          <div class="dropdown-content">
+            <a></a>
+            <a></a>
+            <a routerLink='/hunger-games'>The Hunger games</a>
+            <a routerLink='/catching-fire'>Catching fire</a>
+            <a routerLink='/mockingjay'>Mockingjay</a>
+            <a routerLink='/songbirds-and-snakes'>The Ballad of Songbirds and Snakes</a>
+
+            <a routerLink='/gregor-overlander'>Gregor the Overlander</a>
+            <a routerLink='/gregor-prophecy-bane'>Gregor and the Prophecy of Bane</a>
+            <a routerLink='/gregor-curse-warmbloods'>Gregor and the Curse of the Warmbloods</a>
+            <a routerLink='/gregor-marks-secret'>Gregor and the Marks of Secret</a>
+            <a routerLink='/gregor-code-claw'>Gregor and the Code of Claw</a>
+
+            <a routerLink='/year-of-the-jungle'>Year of the Jungle</a>
+            <a routerLink='/charlie-mc-button'>When Charlie McButton Lost Power</a>
+          </div>
+        </div>
+      </ion-col>
+
+        <ion-col><ion-button fill="clear" id="menuopc" class="hoverBio" routerLink='/biography'>Biography</ion-button></ion-col>
+      <ion-col><ion-button fill="clear" id="menuopc" class="hoverInterview" routerLink='/interview'>Interview</ion-button></ion-col>
+      <ion-col><ion-button fill="clear" id="menuopc" class="hoverFans" routerLink='/fans-asked'>Fans asked</ion-button></ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-header>
+
+
+<ion-content [fullscreen]="true">
+  <div id="container">
+
+    <div id="coverContainer"><ion-img id="coverBook" src="assets/image/Charlie.jpg"></ion-img></div>
+
+
+    <div id="sinopsis">
+      When a thunderstorm knocks out the electricity, Charlie McButton's whole tech empire comes 
+      tumbling down. He needs batteries–FAST. But the only batteries are inside his baby sister's beloved 
+      talking doll. Will he resort to desperate measures, and cause his sister to have a meltdown of her 
+      own? Or will he snap out of his computer craze long enough to realize sisters can be fun, even 
+      without batteries? 
+    </div>
+    
+    <div id="BuyTitleC"><p id="BuyTitle">BUY IT</p>
+    </div>
+
+    <div id="buy">
+      <div id="b1">
+        <a href="https://www.penguinrandomhouse.com/books/289998/when-charlie-mcbutton-lost-power-by-suzanne-collins-illustrated-by-mike-lester/9780142408575">
+          <ion-img id="buy1" src="assets/icon/penguinLogo.png"></ion-img>
+        </a>
+      </div>
+
+      <div id="b2">
+        <a href="https://www.amazon.com/When-Charlie-McButton-Lost-Power/dp/0142408573/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=&sr=">
+          <ion-img id="buy2" src="assets/icon/amazonLogo.png"></ion-img>
+        </a>
+      </div>
+
+      <div id="b3">
+        <a href="https://www.barnesandnoble.com/w/when-charlie-mcbutton-lost-power-suzanne-collins/1103427804?ean=9780142408575">
+          <ion-img id="buy3" src="assets/icon/barnesLogo.png"></ion-img>
+        </a>
+      </div>
+      <div id="b4">
+        <a href="https://www.booksamillion.com/p/Charlie-McButton-Lost-Power/Suzanne-Collins/9780142408575?id=8327017192099">
+          <ion-img id="buy4" src="assets/icon/bamLogo.png"></ion-img>
+        </a>
+      </div>
+    </div>
+    
+      <div class="SliderCritics">
+        <ion-slides [options]="slideOptsCritics" pager="true" #slider (ionSlidesDidLoad)="slidesDidLoad(slider)" class="swiperCritics">
+
+          <ion-slide ><ion-text id="slides-critics">
+            "A clever, humorous story in rhyme. Charlie's techno-driven world comes to a crashing halt when a 
+            thunderstorm causes a power outage. His mother advises, "You'll have to find something without plugs 
+            to play./Read a book!/Clean your room!/Sing a song!/Model clay!" Uninspired, Charlie finally remembers 
+            an old handheld video game, but the battery is missing. Desperate, he steals one from his sister's 
+            talking doll and ends up in the time-out chair. Feeling remorseful when the little girl starts 
+            crying, he seeks her out and the two have a grand time playing games and pretending to be dragons and 
+            wizards. When the power returns, Charlie is ready to retreat to his "handsets and bots" but decides 
+            that it might be fun to spend some time with his sister as well. The hilarious cartoon illustrations 
+            are bold and appealing and depict the siblings' many emotions with exaggerated clarity. While the 
+            mother appears only as a hand patting her panicked son's head, the family dog is usually present, 
+            patiently enduring a hose-down from little Isabel Jane or angrily reproving Charlie for hurting her 
+            feelings. Pair this tale with Glenn McCoy's Penny Lee and Her TV (Hyperion, 2002) for a fun storytime 
+            during 'TV Turnoff Week.'"
+            <br><br><i>School Library Journal</i>
+          </ion-text></ion-slide>
+
+          <ion-slide ><ion-text id="slides-critics">
+            "Charlie loves computer games so much, he never plays with anything else - so when the power goes out, 
+            he's really in the dark. His desperate search for batteries involves his sister's toys and some nasty 
+            behavior before he settles down to realize what's truly important in his life. Deftly written by Suzanne 
+            Collins and nicely illustrated by Mike Lester, When Charlie McButton Lost Power is refreshingly original 
+            and moving!"
+            <br><br><i>Midwest Book Review</i>
+          </ion-text></ion-slide>
+
+          <ion-slide ><ion-text id="slides-critics">
+            "A computer-game addict temporarily turns into a raving lunatic when a power failure shuts 
+            down his PC, and Lester is well up to the task of portraying his breakdown. He sends red-haired 
+            Charlie, pop-eyed features wildly distorted with panic, dashing after an old gameboy, then 
+            brutalizing his little sister Isabel Jane's talking doll for a triple-A battery. When this behavior 
+            instantly relegates him to the Time-Out Chair, Charlie yells (captured in the art by a gross-looking 
+            spray of red and yellow) at Isabel Jane, which sends her away in tears—but then also causes him to 
+            reflect remorsefully on how much he actually enjoys her company. Once off the chair, he seeks her 
+            out for a game of hide-and-seek. Collins tells the tale in loosely written verse and leaves Charlie, 
+            as the house explodes with restored light, thinking that he might go play with his sibling some more 
+            before plugging in again. Unlikely to work as behavior modification, but young geeks may take a break 
+            from their screens to enjoy the over-the-top art."
+            <br><br><i>Kirkus Reviews</i>
+          </ion-text></ion-slide>
+
+        </ion-slides>
+      </div>
+
+    <br>.<br>.<br>.<br>.<br>.<br>
+  </div>
+
+  <ion-fab vertical="center" horizontal="end" slot="fixed"  >
+    <ion-fab-button color="light">
+      <ion-icon name="globe-outline" color="dark"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="top">
+      <ion-fab-button href="https://www.authorsguild.org/"><ion-img id="fab" src="assets/icon/authors.png"></ion-img></ion-fab-button>
+      <ion-fab-button href="https://www.penguin.com/"><ion-img id="fab" src="assets/icon/penguin.png"></ion-img></ion-fab-button>
+      <ion-fab-button href="https://www.amazon.com/"><ion-img id="fab" src="assets/icon/amazon.png"></ion-img></ion-fab-button>
+    </ion-fab-list>
+    <ion-fab-list side="bottom">
+      <ion-fab-button href="https://www.barnesandnoble.com/"><ion-img id="fab2" src="assets/icon/barnes.png"></ion-img></ion-fab-button>
+      <ion-fab-button href="https://www.indiebound.org/"><ion-img id="fab" src="assets/icon/indie.png"></ion-img></ion-fab-button>
+      <ion-fab-button href="https://www.booksamillion.com/"><ion-img id="fab2" src="assets/icon/BAM.png"></ion-img></ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+</ion-content>
+
+
+<ion-footer id="pie">
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <div id="alignI">
+            Created for educational purposes
+          </div>
+        </ion-col>
+        
+        <ion-col >
+          <div id="alignC">
+            <ion-img src="assets/image/scholastic.png" id="logoPie"> </ion-img>
+            <br>TM & (c) 2021 Scholastic Inc. All Rights Reserved.
+          </div>
+        </ion-col>
+
+        <ion-col>
+          <div id="alignD">
+            <ion-button fill="clear" id="sign" class="sign button1" routerLink='/sign-in-up'>
+              <a id="s">SIGN</a>
+              <ion-img id="signIcon" src="assets/icon/derecha.png"></ion-img>
+              <!--<ion-icon slot="end" name="chevron-forward-outline"></ion-icon>-->
+            </ion-button>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+</ion-footer>

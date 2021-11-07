@@ -1,0 +1,212 @@
+#container{
+    height: 120%;
+}
+
+//ANSWERED Q's
+#pregunta{
+    position: absolute;
+    width: 20%;
+    height: 18%;
+    background-color: #FEFAF7;
+    padding: 1%;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+.p1{
+    margin-left: 15%;
+    margin-top: 3%;
+}
+.p2{
+    margin-left: 40%;
+    margin-top: 3%;
+}
+.p3{
+    margin-left: 65%;
+    margin-top: 3%;
+}
+.p4{
+    margin-top: 17%;
+    margin-left: 15%;
+}
+.p5{
+    margin-top: 17%;
+    margin-left: 40%;
+}
+.p6{
+    margin-top: 17%;
+    margin-left: 65%;
+}
+.p7{
+    margin-top: 31%;
+    margin-left: 15%;
+}
+.p8{
+    margin-top: 31%;
+    margin-left: 40%;
+}
+.p9{
+    margin-top: 31%;
+    margin-left: 65%;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    color: black;
+    font-family: 'Daytona';
+    font-size: larger;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    height:fit-content;
+}
+.tooltip .tooltiptextT{
+    visibility: hidden;
+    width: 150%;
+    background-color: #fed703;
+    font-family: 'Cambria';
+    color: #000000;
+    text-align: center;
+    font-size: medium;
+    border-radius: 25px;
+    padding: 10%;
+    position: absolute;
+    z-index: 1;
+    top: 120%;
+    left: 20%;
+    margin-left: -46%;
+}
+.tooltip .tooltiptextD{
+    visibility: hidden;
+    width: 150%;
+    background-color: #fed703;
+    font-family: 'Cambria';
+    color: #000000;
+    text-align: center;
+    font-size: medium;
+    border-radius: 25px;
+    padding: 10%;
+    position: absolute;
+    z-index: 1;
+    bottom: 110%;
+    left: 30%;
+    margin-left: -54%;
+}
+.tooltip .tooltiptextL{
+    visibility: hidden;
+    width: 150%;
+    background-color: #fed703;
+    font-family: 'Cambria';
+    color: #000000;
+    text-align: center;
+    font-size: medium;
+    border-radius: 25px;
+    padding: 10%;
+    position: absolute;
+    z-index: 1;
+    top: -45%;
+    left: 105%;
+}
+.tooltip .tooltiptextR{
+    visibility: hidden;
+    width: 150%;
+    background-color: #fed703;
+    font-family: 'Cambria';
+    color: #000000;
+    text-align: center;
+    font-size: medium;
+    border-radius: 25px;
+    padding: 10%;
+    position: absolute;
+    z-index: 1;
+    top: -100%;
+    right: 105%;
+}
+
+.tooltip .tooltiptextT::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #3C0501 transparent;
+}
+.tooltip .tooltiptextD::after {
+    content: "";
+    position: absolute;
+    top: 100%; /* At the bottom of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #3C0501 transparent transparent transparent;
+}
+.tooltip .tooltiptextL::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%; /* To the left of the tooltip */
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent #3C0501 transparent transparent;
+}
+.tooltip .tooltiptextR::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 101%; /* To the right of the tooltip */
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent #3C0501;
+}
+  .tooltip:hover .tooltiptextT,.tooltip:hover .tooltiptextD,.tooltip:hover .tooltiptextL,.tooltip:hover .tooltiptextR {
+    visibility: visible;
+}
+  
+
+//ASK YOURSELF
+#inputCont{
+    width: 30%;
+    text-decoration: none;
+    font-size: medium;
+    font-family: 'Cambria';
+    margin-left: 35%;
+    margin-top: 1%;
+    border-radius: 25px;
+}
+
+#askTitle{
+    margin-top: 33%;
+    font-family: 'DaytonaBold';
+    font-weight: bold;
+    font-size: xx-large;
+    line-height: normal;
+    word-spacing: normal;
+    text-align:center;
+    color: #FFFFFF;
+    text-shadow: 1px 0 0 #fed703, -1px 0 0 #fed703, 0 0.5px 0 #fed703, 0 -1px 0 #fed703, 
+    1px 1px #fed703, -1px -1px 0 #fed703, 1px -1px 0 #fed703, -1px 1px 0 #fed703;
+    width: 100%;
+    text-align: center;
+    text-transform: capitalize;
+  }
+#send{
+    width: 8%;
+    height: 4%;
+    text-align: center;
+    font-family: 'DaytonaBold';
+    font-size: larger;
+    margin-left: 57%;
+    margin-top: 1%;
+    background-color: #fed703;
+    color: #000000;
+    border-radius: 10px;
+}
+.send{
+    background-color: #fed703;
+}

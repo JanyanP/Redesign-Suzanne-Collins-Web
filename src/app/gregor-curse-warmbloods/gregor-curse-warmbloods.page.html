@@ -1,0 +1,185 @@
+<ion-header [fullscreen]="true" id="menu">
+
+  <ion-grid>
+    <ion-row >
+      
+      <ion-col><ion-img src="assets/image/Logo1.png" id="logo"></ion-img></ion-col>
+      <ion-col><ion-button fill="clear" id="menuopc" class="hoverHome" routerLink='/home'>Home</ion-button></ion-col>
+      
+      <ion-col>
+        <div class="dropdown">
+          <ion-button fill="clear" id="menuopc" class="hoverWorks" routerLink='/works'>Works</ion-button>
+          <div class="dropdown-content">
+            <a></a>
+            <a></a>
+            <a routerLink='/hunger-games'>The Hunger games</a>
+            <a routerLink='/catching-fire'>Catching fire</a>
+            <a routerLink='/mockingjay'>Mockingjay</a>
+            <a routerLink='/songbirds-and-snakes'>The Ballad of Songbirds and Snakes</a>
+
+            <a routerLink='/gregor-overlander'>Gregor the Overlander</a>
+            <a routerLink='/gregor-prophecy-bane'>Gregor and the Prophecy of Bane</a>
+            <a routerLink='/gregor-curse-warmbloods'>Gregor and the Curse of the Warmbloods</a>
+            <a routerLink='/gregor-marks-secret'>Gregor and the Marks of Secret</a>
+            <a routerLink='/gregor-code-claw'>Gregor and the Code of Claw</a>
+
+            <a routerLink='/year-of-the-jungle'>Year of the Jungle</a>
+            <a routerLink='/charlie-mc-button'>When Charlie McButton Lost Power</a>
+          </div>
+        </div>
+      </ion-col>
+
+        <ion-col><ion-button fill="clear" id="menuopc" class="hoverBio" routerLink='/biography'>Biography</ion-button></ion-col>
+      <ion-col><ion-button fill="clear" id="menuopc" class="hoverInterview" routerLink='/interview'>Interview</ion-button></ion-col>
+      <ion-col><ion-button fill="clear" id="menuopc" class="hoverFans" routerLink='/fans-asked'>Fans asked</ion-button></ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-header>
+
+
+<ion-content [fullscreen]="true">
+  <div id="container">
+
+    <div id="coverContainer"><ion-img id="coverBook" src="assets/image/gregor3.png"></ion-img></div>
+
+    <div id="flanco1">
+      <ion-img src="assets/icon/award.png"></ion-img>
+    </div>
+    <div id="flanco2">
+          <ion-img src="assets/icon/award.png"></ion-img>
+    </div>
+    <div class="SliderAwards">
+      <ion-slides [options]="slideOpts" pager="true" #slider (ionSlidesDidLoad)="slidesDidLoad(slider)" class="swiper">
+        
+        <ion-slide ><ion-text id="slides-awards">A NEW YORK TIMES BESTSELLING SERIES</ion-text></ion-slide>
+        <ion-slide ><ion-text id="slides-awards">A BOOK SENSE BESTSELLING SERIES</ion-text></ion-slide>
+        <ion-slide ><ion-text id="slides-awards">A BOOK SENSE TOP TEN CHILDREN'S PICK</ion-text></ion-slide>
+        <ion-slide ><ion-text id="slides-awards">OPPENHEIM TOY PORTFOLIO <br> GOLD AWARD WINNER </ion-text></ion-slide>
+      </ion-slides>
+    </div>
+
+    <div id="sinopsis">
+      Gregor and Boots must return to the Underland to help find a cure for a deadly 
+      plague called the Curse of the Warmbloods. Gregor is desperate to succeed because, 
+      along with several of his Underland friends, a member of his own family is stricken. 
+    </div>
+    
+    <div id="BuyTitleC"><p id="BuyTitle">BUY IT</p>
+    </div>
+
+    <div id="buy">
+      <div id="b1">
+        <a href="https://www.penguinrandomhouse.com/books/30189/the-underland-chronicles-book-three-gregor-and-the-curse-of-the-warmbloods-by-suzanne-collins/9780307282477/">
+          <ion-img id="buy1" src="assets/icon/penguinLogo.png"></ion-img>
+        </a>
+      </div>
+
+      <div id="b2">
+        <a href="https://www.amazon.com/Gregor-Curse-Warmbloods-Underland-Chronicles/dp/1338722786/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=&sr=">
+          <ion-img id="buy2" src="assets/icon/amazonLogo.png"></ion-img>
+        </a>
+      </div>
+
+      <div id="b3">
+        <a href="https://www.barnesandnoble.com/w/gregor-and-the-curse-of-the-warmbloods-suzanne-collins/1100295328?ean=9780439656245">
+          <ion-img id="buy3" src="assets/icon/barnesLogo.png"></ion-img>
+        </a>
+      </div>
+      <div id="b4">
+        <a href="https://www.booksamillion.com/p/Gregor-Curse-Warmbloods-Underland-Chronicles/Suzanne-Collins/9780439656245?id=8327017192099">
+          <ion-img id="buy4" src="assets/icon/bamLogo.png"></ion-img>
+        </a>
+      </div>
+    </div>
+  
+      <div class="SliderCritics">
+        <ion-slides [options]="slideOptsCritics" pager="true" #slider (ionSlidesDidLoad)="slidesDidLoad(slider)" class="swiperCritics">
+          <ion-slide ><ion-text id="slides-critics">
+            "This immensely readable installment won't disappoint fans of the first two books... 
+            Character development, plotting, pacing, and description all shine; suspenseful chapter 
+            endings propel the story forward to its shocking and sobering conclusion."
+            <br><br><i>The Horn Book Magazine</i>
+          </ion-text></ion-slide>
+
+          <ion-slide ><ion-text id="slides-critics">
+            "Collins maintains the momentum, charm, and vivid settings of the original title. 
+            The characterizations continue to be complex with each new book, revealing new sides 
+            to familiar individuals. Fans of this inventive series and new readers alike will be 
+            instantly caught up in the action and will look forward to future installments."
+            <br><br><i>School Library Journal</i>
+          </ion-text></ion-slide>
+
+          <ion-slide ><ion-text id="slides-critics">
+            "The strong, likeable characters, easy reading level, and nonstop action make 
+            this series attractive to even reluctant readers."
+            <br><br><i>VOYA</i>
+          </ion-text></ion-slide>
+
+          <ion-slide ><ion-text id="slides-critics">
+            "Collins keeps the plot moving at warp speed and includes just enough background to 
+            bring readers up to speed on the multitude of characters and the political rivalries 
+            that unite and divide them. This offering takes on an even darker tone than the earlier 
+            ones, delving into meaty questions of territorial expansion and its justification. 
+            Although no further prophecy is unveiled at the end to explicitly promise another sequel, 
+            readers will surely be hoping for one."
+            <br><br><i>Kirkus Reviews</i>
+          </ion-text></ion-slide>
+
+          <ion-slide ><ion-text id="slides-critics">
+            "The addition of the mother adds a fresh dynamic to the fast-paced, suspenseful story. 
+            Fans of the series will enjoy this latest, skillfully told adventure."
+            <br><br><i>Booklist</i>
+          </ion-text></ion-slide>
+
+        </ion-slides>
+
+    </div>
+    <br><br><br><br><br><br><br>
+  </div>
+
+  <ion-fab vertical="center" horizontal="end" slot="fixed"  >
+    <ion-fab-button color="light">
+      <ion-icon name="globe-outline" color="dark"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="top">
+      <ion-fab-button href="https://www.authorsguild.org/"><ion-img id="fab" src="assets/icon/authors.png"></ion-img></ion-fab-button>
+      <ion-fab-button href="https://www.penguin.com/"><ion-img id="fab" src="assets/icon/penguin.png"></ion-img></ion-fab-button>
+      <ion-fab-button href="https://www.amazon.com/"><ion-img id="fab" src="assets/icon/amazon.png"></ion-img></ion-fab-button>
+    </ion-fab-list>
+    <ion-fab-list side="bottom">
+      <ion-fab-button href="https://www.barnesandnoble.com/"><ion-img id="fab2" src="assets/icon/barnes.png"></ion-img></ion-fab-button>
+      <ion-fab-button href="https://www.indiebound.org/"><ion-img id="fab" src="assets/icon/indie.png"></ion-img></ion-fab-button>
+      <ion-fab-button href="https://www.booksamillion.com/"><ion-img id="fab2" src="assets/icon/BAM.png"></ion-img></ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+</ion-content>
+
+
+<ion-footer id="pie">
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <div id="alignI">
+            Created for educational purposes
+          </div>
+        </ion-col>
+        
+        <ion-col >
+          <div id="alignC">
+            <ion-img src="assets/image/scholastic.png" id="logoPie"> </ion-img>
+            <br>TM & (c) 2021 Scholastic Inc. All Rights Reserved.
+          </div>
+        </ion-col>
+
+        <ion-col>
+          <div id="alignD">
+            <ion-button fill="clear" id="sign" class="sign button1" routerLink='/sign-in-up'>
+              <a id="s">SIGN</a>
+              <ion-img id="signIcon" src="assets/icon/derecha.png"></ion-img>
+              <!--<ion-icon slot="end" name="chevron-forward-outline"></ion-icon>-->
+            </ion-button>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+</ion-footer>

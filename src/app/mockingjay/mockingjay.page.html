@@ -1,0 +1,304 @@
+<ion-header [fullscreen]="true" id="menu">
+
+  <ion-grid>
+    <ion-row >
+      
+      <ion-col><ion-img src="assets/image/Logo1.png" id="logo"></ion-img></ion-col>
+      <ion-col><ion-button fill="clear" id="menuopc" class="hoverHome" routerLink='/home'>Home</ion-button></ion-col>
+      
+      <ion-col>
+        <div class="dropdown">
+          <ion-button fill="clear" id="menuopc" class="hoverWorks" routerLink='/works'>Works</ion-button>
+          <div class="dropdown-content">
+            <a></a>
+            <a></a>
+            <a routerLink='/hunger-games'>The Hunger games</a>
+            <a routerLink='/catching-fire'>Catching fire</a>
+            <a routerLink='/mockingjay'>Mockingjay</a>
+            <a routerLink='/songbirds-and-snakes'>The Ballad of Songbirds and Snakes</a>
+
+            <a routerLink='/gregor-overlander'>Gregor the Overlander</a>
+            <a routerLink='/gregor-prophecy-bane'>Gregor and the Prophecy of Bane</a>
+            <a routerLink='/gregor-curse-warmbloods'>Gregor and the Curse of the Warmbloods</a>
+            <a routerLink='/gregor-marks-secret'>Gregor and the Marks of Secret</a>
+            <a routerLink='/gregor-code-claw'>Gregor and the Code of Claw</a>
+
+            <a routerLink='/year-of-the-jungle'>Year of the Jungle</a>
+            <a routerLink='/charlie-mc-button'>When Charlie McButton Lost Power</a>
+          </div>
+        </div>
+      </ion-col>
+
+        <ion-col><ion-button fill="clear" id="menuopc" class="hoverBio" routerLink='/biography'>Biography</ion-button></ion-col>
+      <ion-col><ion-button fill="clear" id="menuopc" class="hoverInterview" routerLink='/interview'>Interview</ion-button></ion-col>
+      <ion-col><ion-button fill="clear" id="menuopc" class="hoverFans" routerLink='/fans-asked'>Fans asked</ion-button></ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-header>
+
+
+<ion-content [fullscreen]="true">
+  <div id="container">
+
+    <div id="coverContainer"><ion-img id="coverBook" src="assets/image/hunger3.jpg"></ion-img></div>
+    
+    <div id="flanco1">
+      <ion-img src="assets/icon/award.png"></ion-img>
+    </div>
+    <div id="flanco2">
+          <ion-img src="assets/icon/award.png"></ion-img>
+    </div>
+    <div class="SliderAwards">
+      <ion-slides [options]="slideOpts" pager="true" #slider (ionSlidesDidLoad)="slidesDidLoad(slider)" class="swiper">
+        
+        <ion-slide ><ion-text id="slides-awards">#1 USA TODAY BESTSELLER</ion-text></ion-slide>
+        <ion-slide ><ion-text id="slides-awards">#1 NEW YORK TIMES BESTSELLER</ion-text></ion-slide>
+        <ion-slide ><ion-text id="slides-awards">#1 WALL STREET JOURNAL BESTSELLER</ion-text></ion-slide>
+        <ion-slide ><ion-text id="slides-awards">#1 PUBLISHERS WEEKLY BESTSELLER</ion-text></ion-slide>
+        <ion-slide ><ion-text id="slides-awards">NEW YORK TIMES NOTABLE CHILDREN'S BOOK OF 2010</ion-text></ion-slide>
+        <ion-slide ><ion-text id="slides-awards">PUBLISHERS WEEKLY'S BEST BOOKS OF 2010: CHILDREN'S FICTION</ion-text></ion-slide>
+        <ion-slide ><ion-text id="slides-awards">A BOOKLIST EDITORS' CHOICE, 2010</ion-text></ion-slide>
+        <ion-slide ><ion-text id="slides-awards">A KIRKUS BEST BOOK OF 2010</ion-text></ion-slide>
+        <ion-slide ><ion-text id="slides-awards">A NEW YORK TIMES EDITORS' CHOICE</ion-text></ion-slide>
+        <ion-slide ><ion-text id="slides-awards">CCBC CHOICES 2011</ion-text></ion-slide>
+        <ion-slide ><ion-text id="slides-awards">2010 ANDRE NORTON AWARD FOR YA SCIENCE</ion-text></ion-slide>
+        <ion-slide ><ion-text id="slides-awards">BARNES & NOBLE BEST TEEN BOOKS OF 2010</ion-text></ion-slide>
+        <ion-slide ><ion-text id="slides-awards">AMAZON BEST BOOKS OF 2010: #3 ON CUSTOMER FAVORITES LIST</ion-text></ion-slide>
+        <ion-slide ><ion-text id="slides-awards">NPR BEST BOOKS OF 2010</ion-text></ion-slide>
+        <ion-slide ><ion-text id="slides-awards">2011 CHILDREN'S CHOICE BOOK AWARD</ion-text></ion-slide>
+        <ion-slide ><ion-text id="slides-awards">2011 AUTHOR OF THE YEAR NOMINEE</ion-text></ion-slide>
+      </ion-slides>
+    </div>
+
+    <div id="sinopsis">
+      Katniss Everdeen, girl on fire, has survived, even though her home has been destroyed. 
+      There are rebels. There are new leaders. A revolution is unfolding.
+    </div>
+    
+    <div id="BuyTitleC"><p id="BuyTitle">BUY IT</p>
+    </div>
+
+    <div id="buy">
+      
+      <div id="b2">
+        <a href="https://www.barnesandnoble.com/w/mockingjay-suzanne-collins/1100171586?ean=9780545663267">
+          <ion-img id="buy2" src="assets/icon/barnesLogo.png"></ion-img>
+        </a>
+      </div>
+
+      <div id="b1">
+        <a href="https://www.amazon.com/gp/product/0545663261/ref=dbs_a_def_rwt_hsch_vapi_tpbk_p1_i3">
+          <ion-img id="buy1" src="assets/icon/amazonLogo.png"></ion-img>
+        </a>
+      </div>
+
+      <div id="b3">
+        <a href="https://www.booksamillion.com/p/Mockingjay-Hunger-Games-Book/Suzanne-Collins/9780439023511?id=8327017192099">
+          <ion-img id="buy3" src="assets/icon/bamLogo.png"></ion-img>
+        </a>
+      </div>
+    </div>
+    
+    <div id="container">
+
+      <div class="SliderCritics">
+        <ion-slides [options]="slideOptsCritics" pager="true" #slider (ionSlidesDidLoad)="slidesDidLoad(slider)" class="swiperCritics">
+          <ion-slide ><ion-text id="slides-critics">
+            "At its best the trilogy channels the political passion of "1984," the memorable violence of "A
+             Clockwork Orange," the imaginative ambience of "The Chronicles of Narnia" and the detailed 
+             inventiveness of "Harry Potter." The specifics of the dystopian universe, 
+            and the fabulous pacing of the complicated plot, give the books their strange, dark charisma."
+            <br><br><i>The New York Times, Katie Roiphe</i>
+          </ion-text></ion-slide>
+
+          <ion-slide ><ion-text id="slides-critics2">
+            "Collins does several things brilliantly, not the least of which is to provide heart-stopping 
+            chapter endings that turn events on their heads and then twist them once more. But more ambitious 
+            is the way she brings readers to questions and conclusions about war throughout the story. There's 
+            nothing didactic here, and sometimes the rush of events even obscures what message there is. Yet 
+            readers will instinctively understand what Katniss knows in her soul, that war mixes all the slogans
+             and justifications, the deceptions and plans, the causes and ideals into an unsavory stew whose 
+             taste brings 
+            madness. That there is still a human spirit that yearns for good is the book's primrose of hope."
+            <br><br><i>Booklist</i>, STARRED REVIEW
+          </ion-text></ion-slide>
+
+          <ion-slide ><ion-text id="slides-critics">
+            "This dystopic-fantasy series, which began in 2008, has had such tremendous crossover appeal that
+             teens and parents may discover themselves vying for -- and talking about -- the family copy of 
+             "Mockingjay." And there's much to talk about because this powerful novel pierces cheery complacency
+             like a Katniss-launched arrow. Look skeptically at computer and television images, it suggests, be 
+             aware of spin, gaze upon the young faces
+             of the world's soldiers. Children forced to kill children? It's not just in the pages of a novel." 
+            <br><br><i>The Washington Post</i>
+          </ion-text></ion-slide>
+
+          <ion-slide ><ion-text id="slides-critics">
+            "The indelible conclusion to Suzanne Collins' Hunger Games trilogy 
+            proves once more that the greatest fantasy novels hold an incandescent mirror up to reality."
+            <br><br><i>Parade</i>, Parade Picks
+          </ion-text></ion-slide>
+
+          <ion-slide ><ion-text id="slides-critics">
+            "But being the Mockingjay comes with a price as Katniss must come to terms with how much of her
+             own humanity and sanity she can willingly sacrifice for the cause, her friends, and her family.
+              Collins is absolutely ruthless in her depictions of war in all its cruelty, violence, and loss,
+               leaving readers, in turn, repulsed, shocked, grieving and, finally, hopeful for the characters
+                they've grown to empathize with and love. Mockingjay is a fitting end to the series that began 
+                with The Hunger Games (2008) and Catching Fire (2009) and will have the 
+            same lasting resonance as William Golding's Lord of the Flies and Stephen King's The Stand."
+            <br><br><i>School Library Journal</i>
+          </ion-text></ion-slide>
+
+          <ion-slide ><ion-text id="slides-critics">
+            "The final installment, the grimmest yet, is a riveting meditation on the costs of war...
+            Clear your schedule before you start: This is a powerful, emotionally exhausting final volume."
+            <br><br><i>People Magazine</i>, 4 OUT OF 4 STARS
+          </ion-text></ion-slide>
+
+          <ion-slide ><ion-text id="slides-critics">
+            "This concluding volume in Collins's Hunger Games trilogy accomplishes a rare feat, the 
+            last installment being the best yet, a beautifully orchestrated and intelligent novel that 
+            succeeds on every level... 
+            In short, there's something here for nearly every reader, all of it completely engrossing."
+            <br><br><i>Publishers Weekly</i>, STARRED REVIEW
+          </ion-text></ion-slide>
+
+          <ion-slide ><ion-text id="slides-critics">
+            "Fans will be happy to hear that Mockingjay is every bit as complex and imaginative as 
+            Hunger Games and Catching Fire. Collins has kicked the brutal violence up a notch in an 
+            edge-of-your-seat plot that follows Katniss as she tries to fulfill her role, 
+            protect her mother and sister and, in the end, finally choose between her two greatest loves. B+."
+            <br><br><i>Entertainment Weekly</i>
+          </ion-text></ion-slide>
+
+          <ion-slide ><ion-text id="slides-critics">
+            "Mockingjay" is without question the most brutal of the trilogy. Nobody emerges unscathed – 
+            very bad things happen to everyone from fan favorites down to characters so minor a reader has
+             to pause and think, "Now, who was that again?" before recoiling in horror at their fate. 
+             Collins doesn't take war lightly – her characters debate the morality involved in tactics 
+             used to try to overthrow the rotting, immoral government, and they pay a high cost for those 
+             tactics. It is also an entirely gripping read. In Katniss, 
+            Collins has crafted a heroine so fierce and tenacious that this reader will follow her anywhere."
+            <br><br><i>Christian Science Monitor</i>
+          </ion-text></ion-slide>
+
+          <ion-slide ><ion-text id="slides-critics">
+            "Much of the action takes place on a battlefield akin to Iraq — where innocent civilians are 
+            murdered to further a cause and each side resorts to unsavory tactics that could lead to a 
+            terrorist label. More maudlin than the first two books in the series, "Mockingjay" is also the 
+            most violent and bloody and, based on the actions and statements of its characters, its most 
+            overtly antiwar — though not so much that it distracts from a series conclusion that is nearly 
+            as shocking, 
+            and certainly every bit as original and thought provoking, as "The Hunger Games." Wow."
+            <br><br><i>Los Angeles Times</i>
+          </ion-text></ion-slide>
+
+          <ion-slide ><ion-text id="slides-critics">
+            "Suspenseful... Collins' fans, grown-ups included, will race to the end."
+            <br><br><i>USA Today</i>
+          </ion-text></ion-slide>
+
+          <ion-slide ><ion-text id="slides-critics2">
+            "Throughout the trilogy, Collins has asked readers to consider heavy questions. What level of 
+            violence is justified to achieve needed change? How much integrity can one compromise for a 
+            just end? To what extent does responsibility to others demand sacrifice of self? How much control 
+            does anyone have over the construction of self? Katniss is the ideal vehicle for this dialogue, 
+            her present-tense narration constantly putting her own motivations and even identity under 
+            scrutiny.It's not giving away anything to reveal that Katniss will be tested sorely, that 
+            allegiances will shift, that heart-thumping scenes of combat will yield to anguished reflection, 
+            that she and readers will find themselves always wondering just whom to trust, that she and 
+            readers will lose friends they love. In the final analysis, this is exactly the book its fans 
+            have been hoping for. It will grab them and not let go, and if it leaves 
+            them with questions, well, then, it's probably exactly the book Collins was hoping for, too."
+            <br><br><i>Kirkus</i>, STARRED REVIEW
+          </ion-text></ion-slide>
+        
+        </ion-slides>
+      </div>
+
+      <div id="reproductor">
+        <ion-text>Watch the movie adpatation trailer!</ion-text><br><br>
+        <iframe id="contenedorReproductor" width="560" height="315" src="https://www.youtube.com/embed/C_Tsj_wTJkQ" 
+        title="YouTube video player" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen marginwidth="10"></iframe>
+        <iframe id="contenedorReproductor" width="560" height="315" src="https://www.youtube.com/embed/n-7K_OjsDCQ" 
+        title="YouTube video player" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div id="contenedorSocial">
+        <ion-text>The Hunger Games Official Social Media</ion-text>
+        <br>
+        <div id="contenedorIcon">
+          <div id="SM1">
+            <a href="https://www.facebook.com/TheHungerGames/">
+              <ion-img id="sm" src="assets/icon/facebook.png"></ion-img>
+            </a>
+          </div>
+
+          <div id="SM2">
+            <a href="https://twitter.com/TheHungerGames">
+              <ion-img id="sm" src="assets/icon/twitter.png"></ion-img>
+            </a>
+          </div>
+
+          <div id="SM3">
+            <a href="https://www.instagram.com/thehungergames/">
+              <ion-img id="sm" src="assets/icon/instagram.png"></ion-img>
+            </a>
+          </div>
+
+        </div>
+      </div>
+      <br>.<br>.<br>.<br>.<br>
+    </div>
+    
+  </div>
+
+  <ion-fab vertical="center" horizontal="end" slot="fixed"  >
+    <ion-fab-button color="light">
+      <ion-icon name="globe-outline" color="dark"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="top">
+      <ion-fab-button href="https://www.authorsguild.org/"><ion-img id="fab" src="assets/icon/authors.png"></ion-img></ion-fab-button>
+      <ion-fab-button href="https://www.penguin.com/"><ion-img id="fab" src="assets/icon/penguin.png"></ion-img></ion-fab-button>
+      <ion-fab-button href="https://www.amazon.com/"><ion-img id="fab" src="assets/icon/amazon.png"></ion-img></ion-fab-button>
+    </ion-fab-list>
+    <ion-fab-list side="bottom">
+      <ion-fab-button href="https://www.barnesandnoble.com/"><ion-img id="fab2" src="assets/icon/barnes.png"></ion-img></ion-fab-button>
+      <ion-fab-button href="https://www.indiebound.org/"><ion-img id="fab" src="assets/icon/indie.png"></ion-img></ion-fab-button>
+      <ion-fab-button href="https://www.booksamillion.com/"><ion-img id="fab2" src="assets/icon/BAM.png"></ion-img></ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+</ion-content>
+
+
+<ion-footer id="pie">
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <div id="alignI">
+            Created for educational purposes
+          </div>
+        </ion-col>
+        
+        <ion-col >
+          <div id="alignC">
+            <ion-img src="assets/image/scholastic.png" id="logoPie"> </ion-img>
+            <br>TM & (c) 2021 Scholastic Inc. All Rights Reserved.
+          </div>
+        </ion-col>
+
+        <ion-col>
+          <div id="alignD">
+            <ion-button fill="clear" id="sign" class="sign button1" routerLink='/sign-in-up'>
+              <a id="s">SIGN</a>
+              <ion-img id="signIcon" src="assets/icon/derecha.png"></ion-img>
+              <!--<ion-icon slot="end" name="chevron-forward-outline"></ion-icon>-->
+            </ion-button>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+</ion-footer>

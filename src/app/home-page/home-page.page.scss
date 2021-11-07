@@ -1,0 +1,56 @@
+#menu ion-list ion-item {
+    background-color:aqua;
+    width: 16.6%;
+    position: absolute;
+    
+    
+}
+
+#menu ion-list {
+  list-style:none;
+  margin:0;
+  padding-left: 0.5%;
+}
+
+#menu ion-list a {
+    text-align: center;
+    font-family: 'Daytona';
+    display:block;
+    color:#fff;
+    font-size:x-large;
+    text-transform:capitalize;
+    text-decoration: none;
+}
+
+#menu ion-list ion-item  {
+  position:relative;
+  float:left;
+  margin:0;
+  padding:0;
+}
+
+#menu ion-list ion-item :hover {
+  background:#5b78a7;
+}
+
+#menu ion-list ion-list {
+  display:none;
+  position:absolute;
+  top:100%;
+  left:0;
+  padding:0;
+}
+
+#menu ion-list ion-list ion-item  {
+  float:none;
+  width:150px
+}
+
+#menu ion-list ion-list a {
+  line-height:120%;
+  padding:10px 15px;
+}
+
+#menu ion-list ion-item :hover > ion-list {
+  display:block;
+}

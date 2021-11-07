@@ -1,0 +1,266 @@
+<ion-header [fullscreen]="true" id="menu">
+
+  <ion-grid>
+    <ion-row >
+      
+      <ion-col><ion-img src="assets/image/Logo1.png" id="logo"></ion-img></ion-col>
+      <ion-col><ion-button fill="clear" id="menuopc" class="hoverHome" routerLink='/home'>Home</ion-button></ion-col>
+      
+      <ion-col>
+        <div class="dropdown">
+          <ion-button fill="clear" id="menuopc" class="hoverWorks" routerLink='/works'>Works</ion-button>
+          <div class="dropdown-content">
+            <a></a>
+            <a></a>
+            <a routerLink='/hunger-games'>The Hunger games</a>
+            <a routerLink='/catching-fire'>Catching fire</a>
+            <a routerLink='/mockingjay'>Mockingjay</a>
+            <a routerLink='/songbirds-and-snakes'>The Ballad of Songbirds and Snakes</a>
+
+            <a routerLink='/gregor-overlander'>Gregor the Overlander</a>
+            <a routerLink='/gregor-prophecy-bane'>Gregor and the Prophecy of Bane</a>
+            <a routerLink='/gregor-curse-warmbloods'>Gregor and the Curse of the Warmbloods</a>
+            <a routerLink='/gregor-marks-secret'>Gregor and the Marks of Secret</a>
+            <a routerLink='/gregor-code-claw'>Gregor and the Code of Claw</a>
+
+            <a routerLink='/year-of-the-jungle'>Year of the Jungle</a>
+            <a routerLink='/charlie-mc-button'>When Charlie McButton Lost Power</a>
+          </div>
+        </div>
+      </ion-col>
+
+        <ion-col><ion-button fill="clear" id="menuopc" class="hoverBio" routerLink='/biography'>Biography</ion-button></ion-col>
+      <ion-col><ion-button fill="clear" id="menuopc" class="hoverInterview" routerLink='/interview'>Interview</ion-button></ion-col>
+      <ion-col><ion-button fill="clear" id="menuopc" class="hoverFans" routerLink='/fans-asked'>Fans asked</ion-button></ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-header>
+
+
+<ion-content [fullscreen]="true">
+  <div id="container">
+
+    <div id="coverContainer"><ion-img id="coverBook" src="assets/image/hunger2.jpg"></ion-img></div>
+
+    <div id="flanco1">
+      <ion-img src="assets/icon/award.png"></ion-img>
+    </div>
+    <div id="flanco2">
+      <ion-img src="assets/icon/award.png"></ion-img>
+    </div>
+    <div class="SliderAwards">
+      <ion-slides [options]="slideOpts" pager="true" #slider (ionSlidesDidLoad)="slidesDidLoad(slider)" class="swiper">
+        <ion-slide ><ion-text id="slides-awards">#1 NEW YORK TIMES BESTSELLER</ion-text></ion-slide>
+        <ion-slide ><ion-text id="slides-awards">#1 USA TODAY BESTSELLER</ion-text></ion-slide>
+        <ion-slide ><ion-text id="slides-awards">#1 WALL STREET JOURNAL BESTSELLER</ion-text></ion-slide>
+        <ion-slide ><ion-text id="slides-awards">#1 PUBLISHERS WEEKLY BESTSELLER</ion-text></ion-slide>
+        <ion-slide ><ion-text id="slides-awards">A NEW YORK TIMES EDITORS' CHOICE</ion-text></ion-slide>
+        <ion-slide ><ion-text id="slides-awards">TIME MAGAZINE TOP 10 FICTION BOOKS OF 2009</ion-text></ion-slide>
+        <ion-slide ><ion-text id="slides-awards">PUBLISHERS WEEKLY'S BEST BOOKS OF 2009: CHILDREN'S FICTION</ion-text></ion-slide>
+        <ion-slide ><ion-text id="slides-awards">A BOOKLIST EDITORS' CHOICE, 2009</ion-text></ion-slide>
+        <ion-slide ><ion-text id="slides-awards">BARNES & NOBLE BEST TEEN BOOKS OF 2009 </ion-text></ion-slide>
+        <ion-slide ><ion-text id="slides-awards">A PEOPLE MAGAZINE (TOP 10) BEST BOOK OF 2009</ion-text></ion-slide>
+        <ion-slide ><ion-text id="slides-awards">AMAZON BEST BOOKS OF 2009: TOP 100 EDITORS' PICK, TOP 10 BOOKS: TEENS</ion-text></ion-slide>
+        <ion-slide ><ion-text id="slides-awards">A LOS ANGELES TIMES BEST CHILDREN'S BOOK OF 2009</ion-text></ion-slide>
+        <ion-slide ><ion-text id="slides-awards">BORDERS BEST BOOKS OF 2009: TEENS</ion-text></ion-slide>
+        <ion-slide ><ion-text id="slides-awards">A KIRKUS BEST BOOK OF 2009</ion-text></ion-slide>
+      </ion-slides>
+    </div>
+
+    <div id="sinopsis">
+      Much to her shock, Katniss has fueled an unrest she's afraid she cannot stop. And what 
+      scares her more is that she's not entirely convinced she should try. As time draws near 
+      for Katniss and Peeta to visit the districts on the Capitol's cruel Victory Tour, the 
+      stakes are higher than ever. If they can't prove, without a shadow of a doubt, that 
+      they are lost in their love for each other, the consequences will be horrifying.
+    </div>
+    
+    <div id="BuyTitleC"><p id="BuyTitle">BUY IT</p>
+    </div>
+
+    <div id="buy">
+      
+      <div id="b2">
+        <a href="https://www.barnesandnoble.com/w/catching-fire-suzanne-collins/1100296850?ean=9780545586177">
+          <ion-img id="buy2" src="assets/icon/barnesLogo.png"></ion-img>
+        </a>
+      </div>
+
+      <div id="b1">
+        <a href="https://www.amazon.com/gp/product/0545586178/ref=dbs_a_def_rwt_hsch_vapi_tpbk_p1_i2">
+          <ion-img id="buy1" src="assets/icon/amazonLogo.png"></ion-img>
+        </a>
+      </div>
+
+      <div id="b3">
+        <a href="https://www.booksamillion.com/p/Catching-Fire-Hunger-Games-Book/Suzanne-Collins/9780439023498?id=8327017192099&__cf_chl_jschl_tk__=pmd_vzxRAcVdC7gptuFDqQ0ZS8ggnDVUrCX.fYd3H2n8DU4-1632707250-0-gqNtZGzNAnujcnBszQqR">
+          <ion-img id="buy3" src="assets/icon/bamLogo.png"></ion-img>
+        </a>
+      </div>
+    </div>
+    
+    <div id="container">
+
+      <div class="SliderCritics">
+        <ion-slides [options]="slideOptsCritics" pager="true" #slider (ionSlidesDidLoad)="slidesDidLoad(slider)" class="swiperCritics">
+          <ion-slide ><ion-text id="slides-critics">
+            "Collins has done that rare thing. She has written a sequel that improves upon the first book."
+            <br><br><i>The New York Times, Gabrielle Zevin</i>
+          </ion-text></ion-slide>
+
+          <ion-slide ><ion-text id="slides-critics">
+            "Again, Collins' crystalline, unadorned prose provides an open window to perfect pacing and 
+            electrifying world-building, but what's even more remarkable is that aside from being 
+            tremendously action-packed sf thrillers, these books are also brimming with potent themes of 
+            morality, obedience, sacrifice, redemption, love, law, and, above all, survival. Honestly, 
+            this book only needs to be good enough to satisfy its legions of fans. Fortunately, it's 
+            great. And if you were dying to find out what happens after the last book, get ready for 
+            pure torture awaiting the next."
+            <br><br><i>Booklist</i>, STARRED REVIEW
+          </ion-text></ion-slide>
+
+          <ion-slide ><ion-text id="slides-critics">
+            "Whereas Katniss kills with finesse, Collins writes with raw power...The Hunger Games and 
+            Catching Fire expose children to exactly the kind of violence we usually shield them from.  
+            But that just goes to show how much adults forget about what it's like to be a child.  Kids 
+            are physical creatures, and they're not stupid.  They know all about violence and power and 
+            raw emotions. What's really scary is when adults pretend that such things don't exist." 
+            <br><br><i>Time Magazine</i>
+          </ion-text></ion-slide>
+
+          <ion-slide ><ion-text id="slides-critics">
+            "...doesn't disappoint when it segues into the pulse-pounding action readers have come to expect. 
+            Characters from the previous volume reappear to good effect: Katniss's stylist, Cinna, proves he's
+             about more than fashion; Haymitch becomes more dimensional. But the star remains Katniss, whose 
+             bravery, honesty and wry cynicism carry the narrative...Collins has also created an exquisitely 
+             tense romantic triangle for her heroine...by book's end (and it's a cliffhanger), readers will be
+              picking sides—Peeta or Gale?"
+            <br><br><i>Publishers Weekly</i>, STARRED REVIEW
+          </ion-text></ion-slide>
+
+          <ion-slide ><ion-text id="slides-critics">
+            "Beyond the expert world building, the acute social commentary and the large cast of fully realized
+             characters, there's action, intrigue, romance and some amount of hope in a story readers will find
+              completely engrossing. Collins weaves in enough background for this novel to stand alone, but it
+               will be a far richer experience for those who have read the first installment and come to love 
+               Katniss, Peeta, Haymitch and the rest of the desperate residents
+             of this dystopia. A humdinger of a cliffhanger will leave readers clamoring for volume three."
+            <br><br><i>Kirkus Reviews</i>, STARRED REVIEW
+          </ion-text></ion-slide>
+
+          <ion-slide ><ion-text id="slides-critics">
+            "...this sequel has enough action to please Hunger Games fans and leaves
+             enough questions tantalizingly unanswered for readers to be desperate for the next installment."
+            <br><br><i>School Library Journal</i>, STARRED REVIEW
+          </ion-text></ion-slide>
+
+          <ion-slide ><ion-text id="slides-critics">
+            "Collins has once again delivered a page-turning 
+            blend of plot and character with an inventive setting and provocative themes."
+            <br><br><i>The Horn Book Magazine</i>
+          </ion-text></ion-slide>
+
+          <ion-slide ><ion-text id="slides-critics">
+            "Gladiator" meets "Project Runway" in Suzanne Collins's gripping dystopian novel "The Hunger Games"
+             and its new sequel, "Catching Fire."  Collins has joined J.K. 
+            Rowling and Stephenie Meyer as a writer of children's books that adults are eager to read."
+            <br><br><i>Bloomberg.com</i>
+          </ion-text></ion-slide>
+
+          <ion-slide ><ion-text id="slides-critics">
+            "Collins ratchets up the tension in the second book in the Hunger Games trilogy. With a 
+            host of well-drawn new secondary characters and 
+            more lives on the line, this will keep readers of all ages up long past their bedtimes."
+            <br><br><i>Romantic Times Book Reviews</i>, 4.5 STARS
+          </ion-text></ion-slide>
+
+          <ion-slide ><ion-text id="slides-critics">
+            "Stellar, imaginative writing."
+            <br><br><i>Los Angeles Times</i>
+          </ion-text></ion-slide>
+        
+        </ion-slides>
+      </div>
+
+      <div id="reproductor">
+        <ion-text>Watch the movie adpatation trailer!</ion-text><br><br>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/MkvUNfySGQU" 
+        title="YouTube video player" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>
+      </div>
+      <div id="contenedorSocial">
+        <ion-text>The Hunger Games Official Social Media</ion-text>
+        <br>
+        <div id="contenedorIcon">
+          <div id="SM1">
+            <a href="https://www.facebook.com/TheHungerGames/">
+              <ion-img id="sm" src="assets/icon/facebook.png"></ion-img>
+            </a>
+          </div>
+
+          <div id="SM2">
+            <a href="https://twitter.com/TheHungerGames">
+              <ion-img id="sm" src="assets/icon/twitter.png"></ion-img>
+            </a>
+          </div>
+
+          <div id="SM3">
+            <a href="https://www.instagram.com/thehungergames/">
+              <ion-img id="sm" src="assets/icon/instagram.png"></ion-img>
+            </a>
+          </div>
+
+        </div>
+      </div>
+      <br>.<br>.<br>.<br>.<br>
+    </div>
+    
+  </div>
+
+  <ion-fab vertical="center" horizontal="end" slot="fixed"  >
+    <ion-fab-button color="light">
+      <ion-icon name="globe-outline" color="dark"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="top">
+      <ion-fab-button href="https://www.authorsguild.org/"><ion-img id="fab" src="assets/icon/authors.png"></ion-img></ion-fab-button>
+      <ion-fab-button href="https://www.penguin.com/"><ion-img id="fab" src="assets/icon/penguin.png"></ion-img></ion-fab-button>
+      <ion-fab-button href="https://www.amazon.com/"><ion-img id="fab" src="assets/icon/amazon.png"></ion-img></ion-fab-button>
+    </ion-fab-list>
+    <ion-fab-list side="bottom">
+      <ion-fab-button href="https://www.barnesandnoble.com/"><ion-img id="fab2" src="assets/icon/barnes.png"></ion-img></ion-fab-button>
+      <ion-fab-button href="https://www.indiebound.org/"><ion-img id="fab" src="assets/icon/indie.png"></ion-img></ion-fab-button>
+      <ion-fab-button href="https://www.booksamillion.com/"><ion-img id="fab2" src="assets/icon/BAM.png"></ion-img></ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+</ion-content>
+
+
+<ion-footer id="pie">
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <div id="alignI">
+            Created for educational purposes
+          </div>
+        </ion-col>
+        
+        <ion-col >
+          <div id="alignC">
+            <ion-img src="assets/image/scholastic.png" id="logoPie"> </ion-img>
+            <br>TM & (c) 2021 Scholastic Inc. All Rights Reserved.
+          </div>
+        </ion-col>
+
+        <ion-col>
+          <div id="alignD">
+            <ion-button fill="clear" id="sign" class="sign button1" routerLink='/sign-in-up'>
+              <a id="s">SIGN</a>
+              <ion-img id="signIcon" src="assets/icon/derecha.png"></ion-img>
+              <!--<ion-icon slot="end" name="chevron-forward-outline"></ion-icon>-->
+            </ion-button>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+</ion-footer>

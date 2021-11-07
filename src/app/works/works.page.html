@@ -1,0 +1,200 @@
+
+
+<ion-header [fullscreen]="true" id="menu">
+
+  <ion-grid>
+    <ion-row >
+      
+      <ion-col><ion-img src="assets/image/Logo1.png" id="logo"></ion-img></ion-col>
+      <ion-col><ion-button fill="clear" id="menuopc" class="hoverHome" routerLink='/home'>Home</ion-button></ion-col>
+      
+      <ion-col>
+        <div class="dropdown">
+          <ion-button fill="clear" id="menuopc" class="hoverWorks" >Works</ion-button>
+          <div class="dropdown-content">
+            <a></a>
+            <a></a>
+            <a routerLink='/hunger-games'>The Hunger games</a>
+            <a routerLink='/catching-fire'>Catching fire</a>
+            <a routerLink='/mockingjay'>Mockingjay</a>
+            <a routerLink='/songbirds-and-snakes'>The Ballad of Songbirds and Snakes</a>
+
+            <a routerLink='/gregor-overlander'>Gregor the Overlander</a>
+            <a routerLink='/gregor-prophecy-bane'>Gregor and the Prophecy of Bane</a>
+            <a routerLink='/gregor-curse-warmbloods'>Gregor and the Curse of the Warmbloods</a>
+            <a routerLink='/gregor-marks-secret'>Gregor and the Marks of Secret</a>
+            <a routerLink='/gregor-code-claw'>Gregor and the Code of Claw</a>
+
+            <a routerLink='/year-of-the-jungle'>Year of the Jungle</a>
+            <a routerLink='/charlie-mc-button'>When Charlie McButton Lost Power</a>
+          </div>
+        </div>
+      </ion-col>
+
+        <ion-col><ion-button fill="clear" id="menuopc" class="hoverBio" routerLink='/biography'>Biography</ion-button></ion-col>
+      <ion-col><ion-button fill="clear" id="menuopc" class="hoverInterview" routerLink='/interview'>Interview</ion-button></ion-col>
+      <ion-col><ion-button fill="clear" id="menuopc" class="hoverFans" routerLink='/fans-asked'>Fans asked</ion-button></ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-header>
+
+
+<ion-content [fullscreen]="true">
+  <div id="container">
+
+    <p id="HungerTitle">THE HUNGER GAMES</p>
+    <div class="contenedor1">
+      <img src="assets/image/hunger1.jpeg" class="image">
+      <div class="overlayh1" routerLink='/hunger-games'>
+        <div class="text">"Happy Hunger Games! And may the odds be ever in your favor."</div>
+      </div>
+    </div>  
+    <div class="contenedor2">
+      <img src="assets/image/hunger2.jpg" class="image">
+      <div class="overlayh2" routerLink='/catching-fire'>
+        <div class="text">
+          "At some point, you have to stop running and turn around and face
+          whoever wants you dead. The hard thing is finding the courage to do it."
+        </div>
+      </div>
+    </div>  
+    <div class="contenedor3">
+      <img src="assets/image/hunger3.jpg" class="image">
+      <div class="overlayh3" routerLink='/mockingjay'>
+        <div class="text">"There are much worse games to play."
+          <br><br>"Fire burns brighter in the darkness"
+        </div>
+      </div>
+    </div>  
+    <div class="contenedor4">
+      <img src="assets/image/hunger4.jpg" class="image">
+      <div class="overlayh4" routerLink='/songbirds-and-snakes'>
+        <div class="text">"Try not to look down on people who had to choose
+          beetwen death and disgrace."
+        </div>
+      </div>
+    </div>  
+
+    <p id="GregorTitle">THE UNDERLAND CHRONICLES</p>
+    <div class="contenedor5">
+      <img src="assets/image/gregor1.jpg" class="image">
+      <div class="overlayh5" routerLink='/gregor-overlander'>
+        <div class="text">"He had to leap, and by his death, the others would live."</div>
+      </div>
+    </div>  
+    <div class="contenedor6">
+      <img src="assets/image/gregor2.jpg" class="image">
+      <div class="overlayh6" routerLink='/gregor-prophecy-bane'>
+        <div class="text">
+          "If Under fell, if Over leaped,
+          If death was life and Death life reaped,
+          Something rises from the gloom,
+          To make the Underland a tomb"
+        </div>
+      </div>
+    </div>  
+    <div class="contenedor7">
+      <img src="assets/image/gregor3.png" class="image">
+      <div class="overlayh7" routerLink='/gregor-curse-warmbloods'>
+        <div class="text">"Warmblood now a bloodborne death,
+          Will rob your body of it's breath
+          Mark your skin and seal your fate
+          The Underland becomes a plate"
+        </div>
+      </div>
+    </div>  
+    <div class="contenedor8">
+      <img src="assets/image/gregor4.png" class="image">
+      <div class="overlayh8" routerLink='/gregor-marks-secret'>
+        <div class="text">"Upon this crown my pledge I give,
+          To my last breath,I hold this choice,
+          I will your unjust deaths avenge,
+          All here who died without a voice"
+        </div>
+      </div>
+    </div>  
+    <div class="contenedor9">
+      <img src="assets/image/gregor5.jpg" class="image">
+      <div class="overlayh9" routerLink='/gregor-code-claw'>
+        <div class="text">"The war has been declared.
+          Your ally been ensnared.
+          It is now or it is never.
+          Break the code or die forever."
+        </div>
+      </div>
+    </div>  
+
+    <p id="PictureTitle">PICTURE BOOKS</p>
+    <div class="contenedor10">
+      <img src="assets/image/YearJungle.jpg" class="image" routerLink='/year-of-the-jungle'>
+    </div>  
+    <div class="contenedor11">
+      <img src="assets/image/Charlie.jpg" class="image" routerLink='/charlie-mc-button'>
+    </div>  
+  </div>
+
+
+  <ion-fab vertical="center" horizontal="end" slot="fixed" >
+    <ion-fab-button color="light">
+      <ion-icon name="globe-outline" color="dark"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="top">
+      <ion-fab-button><ion-img id="fab" src="assets/icon/authors.png" ></ion-img></ion-fab-button>
+      <ion-fab-button><ion-img id="fab" src="assets/icon/penguin.png"></ion-img></ion-fab-button>
+      <ion-fab-button><ion-img id="fab" src="assets/icon/amazon.png"></ion-img></ion-fab-button>
+    </ion-fab-list>
+    <ion-fab-list side="bottom">
+      <ion-fab-button><ion-img id="fab2" src="assets/icon/barnes.png"></ion-img></ion-fab-button>
+      <ion-fab-button><ion-img id="fab" src="assets/icon/indie.png"></ion-img></ion-fab-button>
+      <ion-fab-button><ion-img id="fab2" src="assets/icon/BAM.png"></ion-img></ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+</ion-content>
+
+
+<ion-footer id="pie">
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <div id="alignI">
+            Created for educational purposes
+          </div>
+        </ion-col>
+        
+        <ion-col >
+          <div id="alignC">
+            <ion-img src="assets/image/scholastic.png" id="logoPie"> </ion-img>
+            <br>TM & (c) 2021 Scholastic Inc. All Rights Reserved.
+          </div>
+        </ion-col>
+
+        <ion-col>
+          <div id="alignD">
+            <ion-button fill="clear" id="sign" class="sign button1" routerLink='/sign-in-up'>
+              <a id="s">SIGN</a>
+              <ion-img id="signIcon" src="assets/icon/derecha.png"></ion-img>
+              <!--<ion-icon slot="end" name="chevron-forward-outline"></ion-icon>-->
+            </ion-button>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+</ion-footer>
+
+
+
+<!--<ion-content>
+
+  <h2>Hoverable Dropdown</h2>
+  <p>Move the mouse over the button to open the dropdown menu.</p>
+  
+  <div class="dropdown">
+    <ion-button class="dropbtn">Dropdown</ion-button>
+    <div class="dropdown-content">
+      <a routerLink='/hunger-games'>Hunger games</a>
+      <a routerLink='/catching-fire'>Catching fire</a>
+    </div>
+  </div>
+  
+</ion-content>
+-->
