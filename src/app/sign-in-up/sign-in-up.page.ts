@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-sign-in-up',
   templateUrl: './sign-in-up.page.html',

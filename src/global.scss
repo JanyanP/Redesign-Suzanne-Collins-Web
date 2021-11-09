@@ -57,14 +57,100 @@
   text-decoration: none;
 }
 
-
-
 #menu {
-    position:-webkit-sticky;
-    background-color: #000000;
-    height:auto;
-    padding-left: 0.5%;
-  }
+  position:-webkit-sticky;
+  background-color: #000000;
+  height:auto;
+  padding-left: 0.5%;
+}
+
+
+.site-navigation {
+  display: block;
+  font-family: 'DaytonaBold';
+  font-size: xx-large;
+  width:100%;
+  height: 85%;
+}
+.site-navigation ul {
+  background: rgb(165, 11, 11);
+  list-style: none;
+  margin: 0;
+  padding-left:0;
+}
+.site-navigation li {
+  color: #ffffff;
+  background: rgb(0, 0, 0);
+  display: block;
+  float:left;
+  margin-left: 5%;
+  margin-right: 2.5%;
+  position: relative;
+  text-decoration: none;
+  text-transform: capitalize;
+  align-content:center;
+  margin-top: 0.5%;
+  margin-bottom: 0.5%;
+}
+.site-navigation li a {
+  color: #fed703;
+  text-decoration: none;
+  display: block;
+
+}
+.site-navigation li:hover {
+  transition:  0.2s;
+  background: rgb(0, 0, 0);
+  cursor: pointer;
+  color: #fff;
+}
+.site-navigation ul li ul {
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  font-family: 'Cambria';
+  font-size: medium;
+  visibility: hidden;
+  float: left;
+  width: 300%;
+  position: absolute;
+  transition: visibility 0.65s ease-in;
+  margin-top:12px;
+  margin-left: -100%;
+  z-index: 999;
+  
+}
+.site-navigation ul li:hover > ul,
+.site-navigation ul li ul:hover {
+   visibility: visible;
+   color: #fff;
+}
+.site-navigation ul li ul li {
+  clear: both;
+  padding: 5px 0px 5px 0px;
+  width: 90%;
+  color: rgb(5, 109, 27);
+  
+}
+.site-navigation ul li ul li:hover {
+  background: rgb(31, 31, 31);
+  color: rgb(255, 255, 255) !important;
+}
+
+
+
+
+/*
+#divmenu{
+  width: 80%;
+  background-color: #ffffff;
+  margin-top: 0%;
+  margin-left: 20%;
+  position: relative;
+  height: 50%;
+  display: flex;
+  float: left;
+}
+
 #divi{
   width: 16.6;
 }
@@ -76,7 +162,7 @@
     font-size:xx-large;
     color: #fed703;
     text-transform: capitalize;
-  }
+  }*/
   
 
 
@@ -89,32 +175,36 @@
     font-size:large;
     padding-left: 4%;
   }
-  #logo{
-    height: 60px;;
-  }
+#logo{
+  height:fit-content;
+  
+  width: 10%;
+  background-color: #fed703;
+
+}
+
+
   
 
 
 .hoverHome {
     &:before {
       content: url(assets/image/Home.png);
-      //content: ;
       display: flex;
       align-items: center;
       justify-content: center;
-      position: absolute;
+      position:absolute;
       
-      top: 0;
-      left: 0px;
+      background-color: #000;
       width: 100%;
       height: 100%;
-      text-align: center;
       transform: scale(0,1);
-      transition: all 0.2s linear 0s;
+      transition:none 0.2s linear 0s;
     }
     
     &:hover {
-      text-indent: -9999px;
+      text-indent: 0px;
+      
       
       &:before {
         transform: scale(1,1);
@@ -123,34 +213,55 @@
     }
   }
 .hoverWorks {
-  
-    &:before {
-      content: url(assets/image/Works.png);
-      display:block;
-      align-items: center;
-      justify-content: center;
-      position: absolute;
-      top: 0;
-      left: 0px;
-      width: 100%;
-      height: 100%;
-      text-align: center;
-      transform: scale(0,1);
-      transition: all 0.2s linear 0s;
-    }
+  &:before {
+    content: url(assets/image/Works.png);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:absolute;
     
-    &:hover {
-      text-indent: -9999px;
-      
-      &:before {
-        transform: scale(1,1);
-        text-indent: 0;
-      }
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    transform: scale(0,1);
+    transition: none 0.2s linear 0s;
+  }
+  
+  &:hover {
+    text-indent: 0px;
+    
+    
+    &:before {
+      transform: scale(1,1);
+      text-indent: 0;
     }
   }
+}
 .hoverBio {
-
+  &:before {
+    content: url(assets/image/Bio.png);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:absolute;
+    
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    transform: scale(0,1);
+    transition: none 0.2s linear 0s;
+  }
+  
+  &:hover {
+    text-indent: 0px;
+    
+    
     &:before {
+      transform: scale(1,1);
+      text-indent: 0;
+    }
+  }
+    /*&:before {
       content: url(assets/image/Bio.png);
       display: flex;
       align-items: center;
@@ -172,10 +283,33 @@
         transform: scale(1,1);
         text-indent: 0;
       }
-    }
+    }*/
   }
 .hoverInterview {
+  &:before {
+    content: url(assets/image/Interview.png);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:absolute;
+    
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    transform: scale(0,1);
+    transition: none 0.2s linear 0s;
+  }
+  
+  &:hover {
+    text-indent: 0px;
+    
+    
     &:before {
+      transform: scale(1,1);
+      text-indent: 0;
+    }
+  }
+    /*&:before {
       content: url(assets/image/Interview.png);
       display: flex;
       align-items: center;
@@ -197,36 +331,46 @@
         transform: scale(1,1);
         text-indent: 0;
       }
-    }
+    }*/
   }
 .hoverFans {
-    &:before {
-      content: url(assets/image/QandA.png);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: absolute;
-      top: 0;
-      left: 0px;
-      width: 100%;
-      height: 100%;
-      text-align: center;
-      transform: scale(0,1);
-      transition: all 0.2s linear 0s;
-    }
+  &:before {
+    content: url(assets/image/QandA.png);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:absolute;
     
-    &:hover {
-      text-indent: -9999px;
-      
-      &:before {
-        transform: scale(1,1);
-        text-indent: 0;
-      }
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    transform: scale(0,1);
+    transition: none 0.2s linear 0s;
+  }
+  
+  &:hover {
+    text-indent: 0px;
+    
+    
+    &:before {
+      transform: scale(1,1);
+      text-indent: 0;
     }
   }
+}
+#vertical{
+  margin-top: 10%;
+}
+#vertical2{
+  margin-top: 6%;
+}
+#subOpts{
+color: #ffffff;
+text-decoration: none;
+text-align:center;
+}
 
-
-
+/*
 .dropdown{
   position: absolute;
   display:inline-block;
@@ -251,7 +395,7 @@
   display: block;
   position: static;
 
-}
+}*/
 
 
 
@@ -326,4 +470,8 @@
 }
 #fab2{
   width: 80%;
+}
+
+#b1:hover,#b2:hover,#b3:hover,#b4:hover{
+  background-color: #000;
 }

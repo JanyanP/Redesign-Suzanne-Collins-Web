@@ -1,47 +1,96 @@
 
 <ion-header [fullscreen]="true" id="menu">
-
-  <ion-grid>
-    <ion-row >
-      
-      <ion-col><ion-img src="assets/image/Logo1.png" id="logo"></ion-img></ion-col>
-      <ion-col><ion-button fill="clear" id="menuopc" class="hoverHome" routerLink='/home'>Home</ion-button></ion-col>
-      
-      <ion-col>
-        <div class="dropdown">
-          <ion-button fill="clear" id="menuopc" class="hoverWorks" routerLink='/works'>Works</ion-button>
-          <div class="dropdown-content">
-            <a></a>
-            <a></a>
-            <a routerLink='/hunger-games'>The Hunger games</a>
-            <a routerLink='/catching-fire'>Catching fire</a>
-            <a routerLink='/mockingjay'>Mockingjay</a>
-            <a routerLink='/songbirds-and-snakes'>The Ballad of Songbirds and Snakes</a>
-
-            <a routerLink='/gregor-overlander'>Gregor the Overlander</a>
-            <a routerLink='/gregor-prophecy-bane'>Gregor and the Prophecy of Bane</a>
-            <a routerLink='/gregor-curse-warmbloods'>Gregor and the Curse of the Warmbloods</a>
-            <a routerLink='/gregor-marks-secret'>Gregor and the Marks of Secret</a>
-            <a routerLink='/gregor-code-claw'>Gregor and the Code of Claw</a>
-
-            <a routerLink='/year-of-the-jungle'>Year of the Jungle</a>
-            <a routerLink='/charlie-mc-button'>When Charlie McButton Lost Power</a>
-          </div>
-        </div>
-      </ion-col>
-
-        <ion-col><ion-button fill="clear" id="menuopc" class="hoverBio" routerLink='/biography'>Biography</ion-button></ion-col>
-      <ion-col><ion-button fill="clear" id="menuopc" class="hoverInterview" routerLink='/interview'>Interview</ion-button></ion-col>
-      <ion-col><ion-button fill="clear" id="menuopc" class="hoverFans" routerLink='/fans-asked'>Fans asked</ion-button></ion-col>
-    </ion-row>
-  </ion-grid>
+  <nav id="navigation" class="site-navigation" role="navigation">
+    <ul class="menu">
+      <li class="menu-item"><ion-img src="assets/image/Logo1.png"></ion-img></li>
+      <li class="menu-item"><a routerLink='/home' ><div id="vertical" class="hoverHome">Home</div></a></li>
+      <li class="menu-item"><a routerLink='/works'><div id="vertical" class="hoverWorks">Works</div></a>
+        <ul class="dropdown">
+          <li class="menu-item sub-menu"><a routerLink='/hunger-games' id="subOpts">The Hunger Games</a></li>
+          <li class="menu-item sub-menu"><a routerLink='/catching-fire' id="subOpts">Catching fire</a></li>
+          <li class="menu-item sub-menu"><a routerLink='/mockingjay' id="subOpts">Mockingjay</a></li>
+          <li class="menu-item sub-menu"><a routerLink='/songbirds-and-snakes' id="subOpts">The Ballad of Songbirds and Snakes</a></li>
+          
+          <li class="menu-item sub-menu"><a routerLink='/gregor-overlander' id="subOpts">Gregor the Overlander</a></li>
+          <li class="menu-item sub-menu"><a routerLink='/gregor-prophecy-bane'id="subOpts" >Gregor and the Prophecy of Bane</a></li>
+          <li class="menu-item sub-menu"><a routerLink='/gregor-curse-warmbloods'id="subOpts">Gregor and the Curse of the Warmbloods</a></li>
+          <li class="menu-item sub-menu"><a routerLink='/gregor-marks-secret' id="subOpts">Gregor and the Marks of Secret</a></li>
+          <li class="menu-item sub-menu"><a routerLink='/gregor-code-claw' id="subOpts">Gregor and the Code of Claw</a></li>
+          
+          <li class="menu-item sub-menu"><a routerLink='/year-of-the-jungle' id="subOpts">Year of the Jungle</a></li>
+          <li class="menu-item sub-menu"><a routerLink='/charlie-mc-button' id="subOpts">When Charlie McButton Lost Power</a></li>
+        
+        </ul>
+      </li>
+      <li class="menu-item"><a routerLink='/biography'><div id="vertical2" class="hoverBio">Biography</div></a></li>
+      <li class="menu-item"><a routerLink='/interview'><div id="vertical2" class="hoverInterview">Interview</div></a></li>
+      <li class="menu-item"><a routerLink='/fans-asked'><div id="vertical2" class="hoverFans">Fans asked</div></a></li>
+    </ul>
+  </nav>
 </ion-header>
 
 
 <ion-content [fullscreen]="true">
   <div id="container">
 
-    Primera prueba
+    <div id="signContainer">
+
+      <div class="tabs">
+        <div class="tab-2">
+          <label for="tab2-1" class="opt" >Sign In</label>
+          <input id="tab2-1" name="tabs-two" type="radio" checked="checked">
+          <div>
+
+            <ion-item class="input">
+              <ion-label position="floating">E-mail</ion-label>
+              <ion-input type="email"></ion-input>
+            </ion-item>
+
+            <ion-item class="input">
+              <ion-label position="floating">Password</ion-label>
+              <ion-input type="password"></ion-input>
+            </ion-item>
+            <!--
+            <form action="/action_page.php">
+              <label for="fname">First name: </label>
+              <input type="text" id="fname" name="fname"><br><br>
+              <label for="lname">Last name: </label>
+              <input type="text" id="lname" name="lname"><br><br>
+              <input type="submit" value="Submit">
+            </form> 
+
+            <p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>-->
+          </div>
+        </div>
+        <div class="tab-2">
+          <label for="tab2-2" class="opt">Sign Up</label>
+          <input id="tab2-2" name="tabs-two" type="radio">
+          <div>
+            <ion-item class="input">
+              <ion-label position="floating">Name</ion-label>
+              <ion-input type="text"></ion-input>
+            </ion-item>
+
+            <ion-item class="input">
+              <ion-label position="floating">E-mail</ion-label>
+              <ion-input type="email"></ion-input>
+            </ion-item>
+
+            <ion-item class="input">
+              <ion-label position="floating">Password</ion-label>
+              <ion-input type="password"></ion-input>
+            </ion-item>
+
+            <ion-item class="input">
+              <ion-label position="floating">Confirm Password</ion-label>
+              <ion-input type="password"></ion-input>
+            </ion-item>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
     
   </div>
 
