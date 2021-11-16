@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 
+
 @Component({
   selector: 'app-sign-in-up',
   templateUrl: './sign-in-up.page.html',
@@ -8,9 +9,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SignInUpPage implements OnInit {
 
-  constructor() { }
+  passwordType = 'password';
+  passwordShown=false;
 
   ngOnInit() {
+  }
+
+  public tooglePassword(password,eye){
+    if (password.type === 'password') {
+      password.type = 'text';
+      eye.name = 'eye-off';
+    }
+    else {
+      password.type = 'password';
+      eye.name = 'eye';
+    }
   }
 
 }

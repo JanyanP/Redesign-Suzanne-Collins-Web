@@ -29,7 +29,6 @@
   </nav>
 </ion-header>
 
-
 <ion-content [fullscreen]="true">
   <div id="container">
 
@@ -48,45 +47,42 @@
 
             <ion-item class="input">
               <ion-label position="floating">Password</ion-label>
-              <ion-input type="password"></ion-input>
+              <ion-input  type="password" #mypassword1></ion-input>
+              <ion-icon name="eye" color="gray" slot="end" item-right #eye1 (click)="tooglePassword(mypassword1,eye1)"></ion-icon>
             </ion-item>
             
-            <!--
-            <form action="/action_page.php">
-              <label for="fname">First name: </label>
-              <input type="text" id="fname" name="fname"><br><br>
-              <label for="lname">Last name: </label>
-              <input type="text" id="lname" name="lname"><br><br>
-              <input type="submit" value="Submit">
-            </form> 
-
-            <p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>-->
           </div>
         </div>
         <div class="tab-2">
           <label for="tab2-2" class="opt">Sign Up</label>
           <input id="tab2-2" name="tabs-two" type="radio">
           <div>
+            
             <ion-item class="input">
               <ion-label position="floating">Name</ion-label>
-              <ion-input type="text"></ion-input>
+              <ion-input id="name" type="text"></ion-input>
             </ion-item>
 
             <ion-item class="input">
               <ion-label position="floating">E-mail</ion-label>
-              <ion-input type="email"></ion-input>
+              <ion-input id="email" type="email"></ion-input>
             </ion-item>
 
             <ion-item class="input">
               <ion-label position="floating">Password</ion-label>
-              <ion-input type="password"></ion-input>
+              <ion-input type="password" #mypassword2></ion-input> 
+              <ion-icon name="eye" color="gray" slot="end" item-right #eye2 (click)="tooglePassword(mypassword2,eye2)"></ion-icon>
             </ion-item>
 
+            <!--
             <ion-item class="input">
               <ion-label position="floating">Confirm Password</ion-label>
-              <ion-input type="password"></ion-input>
+              <ion-input id="password2" type="password"></ion-input>
             </ion-item>
-
+            -->
+            <ion-button id="SignUp" fill="clear" class="signB" onclick="verificar()">
+              Sign Up
+            </ion-button>
           </div>
         </div>
       </div>
@@ -111,6 +107,8 @@
       <ion-fab-button href="https://www.booksamillion.com/"><ion-img id="fab2" src="assets/icon/BAM.png"></ion-img></ion-fab-button>
     </ion-fab-list>
   </ion-fab>
+
+    
 
 </ion-content>
 

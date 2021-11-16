@@ -119,13 +119,19 @@
     </div>
 
     <div id="askTitle">ASK SUZANNE</div>
-    <div id="inputCont">
+    <div id="inputCont" *ngIf="!datosSuministrados">
       <ion-item>
         <ion-label position="floating">Write your Q</ion-label>
-        <ion-textarea rows=6></ion-textarea>
+        <ion-textarea rows=6 name="question" id="question" [(ngModel)]="pregunta.q"></ion-textarea>
       </ion-item>
     </div>
-    <ion-button id="send" fill="clear" class="send">SEND</ion-button>
+    <ion-button id="send" fill="clear" class="send" (click)="guardarPregunta()">SEND</ion-button>
+  
+    <div *ngIf="datosSuministrados">
+      <p>Your question has benn sent successfully</p>
+      <button class="btn btn-success" (click)="nuevaPregunta()">New Q</button>
+
+    </div>
   </div>
 
 
