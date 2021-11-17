@@ -25,7 +25,15 @@
       <li class="menu-item"><a routerLink='/biography'><div id="vertical2" class="hoverBio">Biography</div></a></li>
       <li class="menu-item"><a routerLink='/interview'><div id="vertical2" class="hoverInterview">Interview</div></a></li>
       <li class="menu-item"><a routerLink='/fans-asked'><div id="vertical2" class="hoverFans">Fans asked</div></a></li>
+      <li>
+        <div class="mailContainer">
+          <a class="email" *ngIf="userLogged|async as user">
+            {{user.email}} <br> <ion-button size="small" color="light" class="outBtn" (click)="logout()">LogOut</ion-button>
+          </a>
+        </div>
+      </li>
     </ul>
+    
   </nav>
 </ion-header>
 
@@ -41,15 +49,19 @@
           <div>
 
             <ion-item class="input">
-              <ion-label position="floating">E-mail</ion-label>
-              <ion-input type="email"></ion-input>
+              <ion-label position="fixed">E-mail</ion-label>
+              <ion-input type="email" [(ngModel)]='emailS' name="emailS" id="emailS"></ion-input>
             </ion-item>
 
             <ion-item class="input">
-              <ion-label position="floating">Password</ion-label>
-              <ion-input  type="password" #mypassword1></ion-input>
+              <ion-label position="fixed">Password</ion-label>
+              <ion-input  type="password" #mypassword1 [(ngModel)]='passwordS' name="passwordS" id="passwordS"></ion-input>
               <ion-icon name="eye" color="gray" slot="end" item-right #eye1 (click)="tooglePassword(mypassword1,eye1)"></ion-icon>
             </ion-item>
+
+            <ion-button id="SignUp" fill="clear" class="signB" (click)='login()' expand="full" >
+              Sign In
+            </ion-button>
             
           </div>
         </div>
@@ -59,28 +71,22 @@
           <div>
             
             <ion-item class="input">
-              <ion-label position="floating">Name</ion-label>
-              <ion-input id="name" type="text"></ion-input>
+              <ion-label position="fixed">Name</ion-label>
+              <ion-input id="name" type="text" [(ngModel)]='name'></ion-input>
             </ion-item>
 
             <ion-item class="input">
-              <ion-label position="floating">E-mail</ion-label>
-              <ion-input id="email" type="email"></ion-input>
+              <ion-label position="fixed">E-mail</ion-label>
+              <ion-input id="email" type="email" [(ngModel)]='email'></ion-input>
             </ion-item>
 
             <ion-item class="input">
-              <ion-label position="floating">Password</ion-label>
-              <ion-input type="password" #mypassword2></ion-input> 
+              <ion-label position="fixed">Password</ion-label>
+              <ion-input type="password" #mypassword2 [(ngModel)]='password'></ion-input> 
               <ion-icon name="eye" color="gray" slot="end" item-right #eye2 (click)="tooglePassword(mypassword2,eye2)"></ion-icon>
             </ion-item>
 
-            <!--
-            <ion-item class="input">
-              <ion-label position="floating">Confirm Password</ion-label>
-              <ion-input id="password2" type="password"></ion-input>
-            </ion-item>
-            -->
-            <ion-button id="SignUp" fill="clear" class="signB" onclick="verificar()">
+            <ion-button id="SignUp" fill="clear" class="signB" (click)='signup()' expand="full">
               Sign Up
             </ion-button>
           </div>

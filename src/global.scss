@@ -84,7 +84,7 @@
   display: block;
   float:left;
   margin-left: 5%;
-  margin-right: 2.5%;
+  //margin-right: %;
   position: relative;
   text-decoration: none;
   text-transform: capitalize;
@@ -136,34 +136,35 @@
   color: rgb(255, 255, 255) !important;
 }
 
+.email{
+  color: #ffffff !important;
+  font-family: 'Cambria';
+  font-size: small;
+  text-transform: none;
 
-
-
-/*
-#divmenu{
-  width: 80%;
-  background-color: #ffffff;
-  margin-top: 0%;
-  margin-left: 20%;
-  position: relative;
-  height: 50%;
-  display: flex;
-  float: left;
-}
-
-#divi{
-  width: 16.6;
-}
-#menuopc{
-    width:100%;
-    height: 85%;
-    text-align: center;
-    font-family:'DaytonaBold';
-    font-size:xx-large;
-    color: #fed703;
-    text-transform: capitalize;
-  }*/
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   
+}
+.mailContainer{
+  padding-top: 5%;
+  float:right;
+  width:70%;
+  //background-color: #fed703;
+  //margin-left: 3%;
+  text-align:center;
+  height:fit-content;
+
+}
+.outBtn{
+  //height: ;
+  text-transform: capitalize;
+  font-family: 'Cambria';
+  font-size: small;
+}
+
 
 
 #pie {
@@ -183,8 +184,6 @@
 
 }
 
-
-  
 
 
 .hoverHome {
@@ -369,33 +368,6 @@ color: #ffffff;
 text-decoration: none;
 text-align:center;
 }
-
-/*
-.dropdown{
-  position: absolute;
-  display:inline-block;
-  
-}
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #000000;
-  z-index: 2;
-  
-}
-.dropdown-content a {
-  color: #ffffff;
-  padding-left: 5%;
-  padding-top: 2.5%;
-  padding-bottom: 2.5%;
-  text-decoration: none;
-  display: block;
-}
-.dropdown:hover .dropdown-content {
-  display: block;
-  position: static;
-
-}*/
 
 
 
