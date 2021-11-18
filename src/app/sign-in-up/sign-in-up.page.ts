@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { User} from '../models/preguntas';
 import { FirestoreService } from '../services/firestore.service';
 import { NavController } from '@ionic/angular';
-
+import Swal from 'sweetalert2/dist/sweetalert2.js';
 
 @Component({
   selector: 'app-sign-in-up',
@@ -50,6 +50,68 @@ export class SignInUpPage implements OnInit {
     }
   }
 
+
+registroCompleto(){
+  Swal.fire({
+    timerProgressBar: true,
+    timer: 3000,
+    background: '#3c0501',
+    backdrop: '3c05014d',
+    icon: 'success',
+    iconColor: '#ffffff',
+    html: '<div class="swalTitle"> Signed up successfully</div>',
+    showConfirmButton: false,
+    //confirmButtonColor: '#ffffff',
+    //confirmButtonText: '<ion-text class="okBtn">OK</ion-text>'
+  });
+}
+
+loginCompleto(){
+  Swal.fire({
+    html: '<div class="swalTitle"> Signed in successfully</div>',
+    background: '#3c0501',
+    backdrop: '3c05014d',
+    icon: 'success',
+    iconColor: '#ffffff',
+    showConfirmButton: false,
+    timer: 3000,
+    timerProgressBar: true,
+    //confirmButtonColor: '#ffffff',
+    //confirmButtonText: '<ion-text class="okBtn">OK</ion-text>'
+  });
+}
+
+loginAlert(){
+  Swal.fire({
+    html: '<div class="swalTitleAlert">Invalid information. Check your inputs are correct and try again</div>',
+    background: '#ffffff',
+    backdrop: '3c05014d',
+    icon: 'error',
+    iconColor: '#3c0501',
+    showConfirmButton: true,
+    //timer: 3000,
+    //timerProgressBar: true,
+    confirmButtonColor: '#3c0501',
+    confirmButtonText: '<ion-text class="okBtn">OK</ion-text>'
+  });
+}
+
+signupAlert(){
+  Swal.fire({
+    html: '<div class="swalTitleAlert">Invalid information. Your inputs may be incomplete or email account is already registered</div>',
+    background: '#ffffff',
+    backdrop: '3c05014d',
+    icon: 'error',
+    iconColor: '#3c0501',
+    showConfirmButton: true,
+    //timer: 3000,
+    //timerProgressBar: true,
+    confirmButtonColor: '#3c0501',
+    confirmButtonText: '<ion-text class="okBtn">OK</ion-text>'
+  });
+}
+
+
   signup(){
     this.userservice.signup({name: this.name, email: this.email, password:this.password}).then(res=>{
       if(res.user.uid){
@@ -61,33 +123,28 @@ export class SignInUpPage implements OnInit {
         };
         // eslint-disable-next-line @typescript-eslint/no-shadow
         this.userservice.createUser(us).then(res=>{
-          alert('account created');
+          this.registroCompleto();
         },err=>{
           console.log(err);
         });
       }
     }, err=>{
-      alert(err.message);
+      this.signupAlert();
+      //alert(err.message);
       console.log(err);
     });
   }
 
   login(){
-    //console.log('email: ',this.emailS);
-    //console.log('password: ',this.passwordS);
-   // const {emailS, passwordS}= this.usuario;
-    /*this.userservice.loginWithEmail({email: this.emailS, password: this.passwordS}).then(res=>{
-      console.log('Online: ', res);
-    });
-    */
     this.userservice.loginWithEmail({email: this.emailS, password: this.passwordS}).then(res=>{
       console.log(res);
       if(res.user.uid){
-        alert('WELCOME');
         this.navCtr.navigateRoot('/home');
+        this.loginCompleto();
       }
     },err=>{
-      alert('Invalid information. Check your input and try again');
+      this.loginAlert();
+      //alert('alert en ts');
       console.log(err);
     });
   }
@@ -101,4 +158,6 @@ export class SignInUpPage implements OnInit {
   logout(){
     this.userservice.logout();
   }
+
+
 }

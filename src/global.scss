@@ -141,17 +141,20 @@
   font-family: 'Cambria';
   font-size: small;
   text-transform: none;
+  
+}
 
+.email ion-text{
   flex: 1;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  
 }
+
 .mailContainer{
   padding-top: 5%;
   float:right;
-  width:70%;
+  width:100%;
   //background-color: #fed703;
   //margin-left: 3%;
   text-align:center;
@@ -446,4 +449,43 @@ text-align:center;
 
 #b1:hover,#b2:hover,#b3:hover,#b4:hover{
   background-color: #000;
+}
+
+
+.swalTitle {
+  //background-color: #FEFAE3;
+  //padding: 17px;
+  //border: 1px solid #23e01c;
+  //display: block;
+  color: #ffffff;
+  font-family: 'Daytona';
+  font-size: large;
+  //color: #61534e;
+}
+
+.swalTitleAlert {
+  //background-color: #FEFAE3;
+  //padding: 17px;
+  //border: 1px solid #23e01c;
+  //display: block;
+  color: #3c0501;
+  font-family: 'Daytona';
+  font-size: large;
+  //color: #61534e;
+}
+
+.okBtn{
+  color: #ffffff;
+  font-family: 'Cambria';
+}
+
+.alert{
+  text-align: center;
+  color:#ffffff;
+  font-family: 'Daytona';
+  font-size: large;
+}
+.ok{
+  color:#3c0501;
+  font-family: 'Cambria';
 }

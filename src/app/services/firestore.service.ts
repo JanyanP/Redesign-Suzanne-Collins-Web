@@ -4,6 +4,8 @@ import { Preguntas } from '../models/preguntas';
 import { User } from '../models/preguntas';
 import { AngularFireAuth } from '@angular/fire/compat/auth';
 import { AngularFirestore } from '@angular/fire/compat/firestore';
+import Swal from 'sweetalert2/dist/sweetalert2.js';
+
 
 @Injectable({
   providedIn: 'root'
@@ -18,7 +20,6 @@ export class FirestoreService {
 
   // eslint-disable-next-line @typescript-eslint/member-ordering
   usersRef: AngularFireList<User>=null;
-
 
   constructor(private database: AngularFireDatabase, public auth: AngularFireAuth, public firestore: AngularFirestore) {
     this.preguntasRef = database.list(this.dbAsked);
@@ -36,7 +37,7 @@ export class FirestoreService {
       // console.log('password: ', account.password);
       return this.auth.signInWithEmailAndPassword(account.email,account.password);
      }catch(err){
-       alert('Please try again');
+      alert('System not available');
       console.log('error en login: ', err);
       return null;
      }

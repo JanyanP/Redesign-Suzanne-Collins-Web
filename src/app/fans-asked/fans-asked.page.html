@@ -25,6 +25,13 @@
       <li class="menu-item"><a routerLink='/biography'><div id="vertical2" class="hoverBio">Biography</div></a></li>
       <li class="menu-item"><a routerLink='/interview'><div id="vertical2" class="hoverInterview">Interview</div></a></li>
       <li class="menu-item"><a routerLink='/fans-asked'><div id="vertical2" class="hoverFans">Fans asked</div></a></li>
+      <li>
+        <div class="mailContainer">
+          <a class="email" *ngIf="userLogged|async as user">
+            {{user.email}} <br> <ion-button size="small" color="light" class="outBtn" (click)="logout()">LogOut</ion-button>
+          </a>
+        </div>
+      </li>
     </ul>
   </nav>
 </ion-header>
@@ -119,19 +126,15 @@
     </div>
 
     <div id="askTitle">ASK SUZANNE</div>
-    <div id="inputCont" *ngIf="!datosSuministrados">
+    
+    <div id="inputCont">
       <ion-item>
         <ion-label position="floating">Write your Q</ion-label>
-        <ion-textarea rows=6 name="question" id="question" [(ngModel)]="pregunta.q"></ion-textarea>
+        <ion-textarea rows=6 name="q" id="q" [(ngModel)]="q"></ion-textarea>
       </ion-item>
+      <ion-text class="justUsers">Available if signed in</ion-text>
     </div>
     <ion-button id="send" fill="clear" class="send" (click)="guardarPregunta()">SEND</ion-button>
-  
-    <div *ngIf="datosSuministrados">
-      <p>Your question has benn sent successfully</p>
-      <button class="btn btn-success" (click)="nuevaPregunta()">New Q</button>
-
-    </div>
   </div>
 
 

@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
+import { FirestoreService } from '../services/firestore.service';
+
+
 @Component({
   selector: 'app-biography',
   templateUrl: './biography.page.html',
@@ -7,7 +10,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BiographyPage implements OnInit {
 
-  constructor() { }
+  userLogged= this.userservice.getUserLogged();
+constructor(private userservice: FirestoreService){ }
+
+  loggedUser(){
+    this.userservice.getUserLogged().subscribe(res=>{
+      console.log(res?.email) ;
+    });
+  }
+
+  logout(){
+    this.userservice.logout();
+  }
 
   ngOnInit() {
   }

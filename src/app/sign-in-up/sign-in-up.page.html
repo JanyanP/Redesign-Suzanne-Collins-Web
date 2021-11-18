@@ -28,7 +28,7 @@
       <li>
         <div class="mailContainer">
           <a class="email" *ngIf="userLogged|async as user">
-            {{user.email}} <br> <ion-button size="small" color="light" class="outBtn" (click)="logout()">LogOut</ion-button>
+            <ion-text>{{user.email}}</ion-text> <br> <ion-button size="small" color="light" class="outBtn" (click)="logout()">LogOut</ion-button>
           </a>
         </div>
       </li>
@@ -63,6 +63,9 @@
               Sign In
             </ion-button>
             
+            <ion-button fill="clear" (click)='loginAlert()' expand="full">
+              SweetAlert
+            </ion-button>
           </div>
         </div>
         <div class="tab-2">
