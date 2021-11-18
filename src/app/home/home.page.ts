@@ -22,5 +22,21 @@ constructor(private userservice: FirestoreService){ }
   logout(){
     this.userservice.logout();
   }
+/*
 
+import { FirestoreService } from '../services/firestore.service';
+
+userLogged= this.userservice.getUserLogged();
+constructor(private userservice: FirestoreService){ }
+
+  loggedUser(){
+    this.userservice.getUserLogged().subscribe(res=>{
+      console.log(res?.email) ;
+    });
+  }
+
+  logout(){
+    this.userservice.logout();
+  }
+*/
 }

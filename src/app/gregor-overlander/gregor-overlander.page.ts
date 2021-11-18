@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { IonSlides } from '@ionic/angular';
+   import { FirestoreService } from '../services/firestore.service';
 
 @Component({
   selector: 'app-gregor-overlander',
@@ -20,8 +21,20 @@ export class GregorOverlanderPage implements OnInit {
     speed:1000
    };
 
-  constructor() { }
 
+
+   userLogged= this.userservice.getUserLogged();
+   constructor(private userservice: FirestoreService){ }
+
+     loggedUser(){
+       this.userservice.getUserLogged().subscribe(res=>{
+         console.log(res?.email) ;
+       });
+     }
+
+     logout(){
+       this.userservice.logout();
+     }
   slidesDidLoad(slides: IonSlides) {
     slides.startAutoplay();
   }
