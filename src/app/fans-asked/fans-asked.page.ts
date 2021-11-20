@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Preguntas } from '../models/preguntas';
 import { FirestoreService } from '../services/firestore.service';
-import { AngularFireAuth } from '@angular/fire/compat/auth';
 import Swal from 'sweetalert2/dist/sweetalert2.js';
 
 @Component({
@@ -19,13 +18,13 @@ export class FansAskedPage implements OnInit {
   public user: any;
 
 
-  constructor(private firestoreservices: FirestoreService, private userservice: FirestoreService) {
+constructor(private userservice: FirestoreService) {
+}
 
-   }
 
   emailAlert(){
     Swal.fire({
-      html: '<div class="alert">An email with your Q has been sent to you, please wait for Suzanne to answer</div>',
+      html: '<div class="alert">We have received your question, please wait for Suzanne to answer</div>',
       background: '#3c0501',
       backdrop: '3c05014d',
       icon: 'info',
@@ -51,22 +50,19 @@ export class FansAskedPage implements OnInit {
       confirmButtonText: '<ion-text class="okBtn">OK</ion-text>'
     });
   }
-
-
-
-
   logout(){
       this.userservice.logout();
     }
 
+
   guardarPregunta(): void{
-      this.userservice.getUserLogged().subscribe(res=>{
-        const emailR = res?.email;
-        this.firestoreservices.create({email: emailR, q: this.q}).then(() =>{
-            this.emailAlert();
-        });
+    this.userservice.getUserLogged().subscribe(res=>{
+      const emailR = res?.email;
+      this.userservice.create({email: emailR, q: this.q}).then(async () =>{
+        this.emailAlert();
       });
-    }
+    });
+  }
 
   nuevaPregunta(): void{
     this.datosSuministrados = false;
@@ -76,5 +72,5 @@ export class FansAskedPage implements OnInit {
 
   ngOnInit() {
   }
-
+//sstlaffwzgszscdw
 }

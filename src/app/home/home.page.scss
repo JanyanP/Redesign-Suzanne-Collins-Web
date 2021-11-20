@@ -3,7 +3,7 @@
   position: absolute;
   background-color: #101010;
   width: 100%;
-  height:100%;
+  height:111%;
   padding-left: 15%;
   padding-right: 15%;
   padding-top: 3%;
@@ -130,3 +130,21 @@ ion-icon {
 //C:\Users\Janyan Puente\SuzanneCollins\node_modules\ionicons\dist\collection\components\icon\svg
 //C:\Users\Janyan Puente\SuzanneCollins\node_modules\ionicons\dist\ionicons\svg
 //C:\Users\Janyan Puente\SuzanneCollins\node_modules\ionicons\dist\svg
+
+.welcomeBtn{
+  background-color:#ffffff;
+  box-shadow: 0px 0px 20px 10px #202020;
+  border-radius: 20px;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  color: #25532F;
+  
+}
+.divwelcome{
+  margin-bottom: 5%;
+  //margin-top: 1%;
+  //display: flex;
+  text-align: center;
+  height: fit-content;
+  //align-items: center;
+}

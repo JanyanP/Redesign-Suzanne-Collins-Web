@@ -1,5 +1,7 @@
 {
   "name": "SuzanneCollins",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

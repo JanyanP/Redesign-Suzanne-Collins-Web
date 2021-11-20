@@ -13,7 +13,6 @@ import { environment } from 'src/environments/environment';
 import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
 import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 
-
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
