@@ -8,8 +8,9 @@ import { IonSlides } from '@ionic/angular';
   styleUrls: ['./hunger-games.page.scss'],
 })
 export class HungerGamesPage implements OnInit {
-  slideOptions = {
-    initialSlide: 1,
+
+  slideOpts = {
+    initialSlide: 0,
     speed: 400
   };
 

@@ -9,8 +9,9 @@ import { IonSlides } from '@ionic/angular';
 })
 export class GregorMarksSecretPage implements OnInit {
 
-  slideOptions = {
-    initialSlide: 1,
+
+  slideOpts = {
+    initialSlide: 0,
     speed: 400
   };
 
@@ -20,6 +21,7 @@ export class GregorMarksSecretPage implements OnInit {
     autoplay:true,
     speed:1000
    };
+
 
    userLogged= this.userservice.getUserLogged();
    constructor(private userservice: FirestoreService){ }

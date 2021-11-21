@@ -9,8 +9,9 @@ import { IonSlides } from '@ionic/angular';
 })
 export class MockingjayPage implements OnInit {
 
-  slideOptions = {
-    initialSlide: 1,
+
+  slideOpts = {
+    initialSlide: 0,
     speed: 400
   };
 

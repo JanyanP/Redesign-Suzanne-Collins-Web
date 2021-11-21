@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { IonSlides } from '@ionic/angular';
 import { FirestoreService } from '../services/firestore.service';
 
 @Component({
@@ -7,6 +8,19 @@ import { FirestoreService } from '../services/firestore.service';
   styleUrls: ['./charlie-mc-button.page.scss'],
 })
 export class CharlieMcButtonPage implements OnInit {
+
+  slideOpts = {
+    initialSlide: 0,
+    speed: 400
+  };
+
+  slideOptsCritics = {
+    initialSlide: 0,
+    slidesPerView: 1,
+    autoplay:true,
+    speed:1000
+   };
+
 
   userLogged= this.userservice.getUserLogged();
 constructor(private userservice: FirestoreService){ }
@@ -20,7 +34,9 @@ constructor(private userservice: FirestoreService){ }
   logout(){
     this.userservice.logout();
   }
-
+  slidesDidLoad(slides: IonSlides) {
+    slides.startAutoplay();
+  }
   ngOnInit() {
   }
 

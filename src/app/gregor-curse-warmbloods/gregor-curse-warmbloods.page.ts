@@ -12,17 +12,18 @@ export class GregorCurseWarmbloodsPage implements OnInit {
 userLogged= this.userservice.getUserLogged();
 
 
-  slideOptions = {
-    initialSlide: 1,
-    speed: 400
-  };
+slideOpts = {
+  initialSlide: 0,
+  speed: 400
+};
 
-  slideOptsCritics = {
-    initialSlide: 0,
-    slidesPerView: 1,
-    autoplay:true,
-    speed:1000
-   };
+slideOptsCritics = {
+  initialSlide: 0,
+  slidesPerView: 1,
+  autoplay:true,
+  speed:1000
+ };
+
 
   constructor(private userservice: FirestoreService){ }
 

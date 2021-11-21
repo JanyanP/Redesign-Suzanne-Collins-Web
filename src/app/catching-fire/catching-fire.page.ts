@@ -9,10 +9,11 @@ import { FirestoreService } from '../services/firestore.service';
 })
 export class CatchingFirePage implements OnInit {
 
-  slideOptions = {
-    initialSlide: 1,
+  slideOpts = {
+    initialSlide: 0,
     speed: 400
   };
+
 
   slideOptsCritics = {
     initialSlide: 0,

@@ -9,43 +9,51 @@
   padding-top: 3%;
 }
 #container strong {
-  font-size: 20px;
+  font-size: 2em;
   line-height: 26px;
 }
 #container a {
   text-decoration: none;
 }
 
-
-#image{
-  height: 500px;
-  margin-right: 20px;
-  position:absolute;
+.titleDiv{
+  margin-top: 5%;
+  height: fit-content;
+  width: 100%;
+  //background-color: #fed703;
+  float:right;
+  //margin-right: 5%;
 }
-
+.aboutDiv{
+  //margin-top: 1%;
+  height: fit-content;
+  width: 100%;
+  //background-color: #FFCC25;
+  float: right;
+}
 
 #about{
   font-family: 'Cambria';
   color:#ffffff;
   text-align:right;
   width: 100%;
-  padding-left: 50%;
-  font-size: xx-large;
+  //padding-left: 50%;
+  font-size: 1.75em;
   line-height: normal;
   
 }
 #title{
   width: 100%;
-  padding-left: 50%;
-  padding-top: 3%;
+  //padding-left: 50%;
+  //padding-top: 3%;
   font-family: 'DaytonaBold';
   font-weight: bold;
-  font-size: x-large;
+  font-size: 1.2em;
   line-height: normal;
   word-spacing: 4px;
   //display: flex;
  // align-items:center;
-
+  //background-color: #25532F;
   text-align:right;
   color: #FFFFFF;
   text-shadow: 1px 0 0 #FFCC25, -1px 0 0 #FFCC25, 0 0.5px 0 #FFCC25, 0 -1px 0 #FFCC25, 
@@ -54,19 +62,22 @@
   
 }
 #title B{
-  font-size: xx-large;
+  font-size: 1.8em;
   word-spacing: 3px;
 }
 
 
 #divB{
   width: 100%;
-  padding-left: 60%;
+  //padding-left: 50%;
   //display: flex;
   //align-content: center;
   //align-items: center;
-  text-align: center;
+  float: right;
+  margin-top: 2%;
+  text-align:right;
   //background-color: #FFCC25;
+  margin-top: 1%;
 }
 #cmore{
   height: 35px;
@@ -84,7 +95,7 @@
   display: inline-block;
   border-radius: 50px;
   font-family:'DaytonaBold';
-  font-size: xx-large;
+  font-size: 1.5em;
   text-transform: capitalize;
   
 }
@@ -110,26 +121,7 @@
   border: 3px solid #ffffff;
 }
 
-/*
-ion-icon {
-  &[class*="custom-"] {
-    mask-size: contain;
-    mask-position: 50% 50%;
-    mask-repeat: no-repeat;
-    background: currentColor;
-    width: 1em;
-    height: 1em;
-  }
 
-  &[class*="custom-flecha"] {
-    mask-image: url(../assets/icon/signD.svg);
-  }
-
-}
-*/
-//C:\Users\Janyan Puente\SuzanneCollins\node_modules\ionicons\dist\collection\components\icon\svg
-//C:\Users\Janyan Puente\SuzanneCollins\node_modules\ionicons\dist\ionicons\svg
-//C:\Users\Janyan Puente\SuzanneCollins\node_modules\ionicons\dist\svg
 
 .welcomeBtn{
   background-color:#ffffff;
@@ -138,6 +130,9 @@ ion-icon {
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
   color: #25532F;
+  font-family: 'DaytonaBold';
+  text-transform: none;
+  font-size: 1em;
   
 }
 .divwelcome{
@@ -147,4 +142,29 @@ ion-icon {
   text-align: center;
   height: fit-content;
   //align-items: center;
+}
+
+.coverContainer{
+  //width: 30%;
+  height: 65%;
+  margin-left: 5%;
+  float:left;
+  position:relative;
+  margin-top: 3%;
+  //background-color: #fed703;
+}
+
+.coverBook{
+  width: 100%;
+  height: 100%;
+  float: right;
+}
+
+.divEntry{
+  width: 50%;
+  height: 65%;
+  height: fit-content;
+  float: right;
+  text-align:right;
+  //background-color: #fed703;
 }

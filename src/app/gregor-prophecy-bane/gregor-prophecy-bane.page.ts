@@ -10,8 +10,9 @@ import { IonSlides } from '@ionic/angular';
 })
 export class GregorProphecyBanePage implements OnInit {
 
-  slideOptions = {
-    initialSlide: 1,
+
+  slideOpts = {
+    initialSlide: 0,
     speed: 400
   };
 
@@ -21,6 +22,7 @@ export class GregorProphecyBanePage implements OnInit {
     autoplay:true,
     speed:1000
    };
+
 
    userLogged= this.userservice.getUserLogged();
 

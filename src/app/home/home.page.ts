@@ -35,7 +35,7 @@ constructor(private userservice: FirestoreService){ }
         + 'to click around and find out a little more about my'
          + 'books.</ion-text></div>',
       background: '#ffffff',
-      backdrop: '3c05014d',
+      //backdrop: '3c05014d',
       showConfirmButton: true,
       imageUrl: 'assets/image/centralPark.jpg',
       confirmButtonColor: '#fed703',

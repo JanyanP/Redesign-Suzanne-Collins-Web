@@ -19,7 +19,7 @@
 #slides-awards{
     color: #000000;
     font-family: 'DaytonaBold';
-    font-size: large;
+    font-size: 1em;
     text-align: center;
     text-decoration: none;
     padding-top: 4%;
@@ -52,7 +52,7 @@
     width: 40% !important;
     height: 19.5% !important;
     font-family: 'Cambria';
-    font-size: large;
+    font-size: 1.1em;
     text-align: justify;
     text-decoration: none;
     display: flex;
@@ -128,7 +128,7 @@
   }
 #BuyTitle{
     font-family: 'Daytona';
-    font-size: xx-large;
+    font-size: 2em;
     text-align: center;
     text-decoration: none;
     color: #FFFFFF;
@@ -158,7 +158,8 @@
     margin-left: 25%;
     margin-top: 6%;
     width: 50%;
-    height: 49%;
+    //height: 48%;
+    height: fit-content;
     border-radius: 30px;
     //background-color: #fed703;
 }
@@ -166,11 +167,11 @@
     padding-bottom:4%;
     display: flex;
     align-items: center;
-    
+    height: fit-content;
 }
 #slides-critics{
     font-family: 'Cambria';
-    font-size: medium;
+    font-size: 0.85em;
     text-align: center;
     text-decoration: none;
     padding-top: 3%;
@@ -180,7 +181,7 @@
 }
 #slides-critics2{
     font-family: 'Cambria';
-    font-size: small;
+    font-size: 0.75em;
     text-align: center;
     text-decoration: none;
     padding-top: 3%;

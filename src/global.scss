@@ -68,12 +68,12 @@
 .site-navigation {
   display: block;
   font-family: 'DaytonaBold';
-  font-size: xx-large;
+  font-size: 2em;
   width:100%;
   height: 85%;
 }
 .site-navigation ul {
-  background: rgb(165, 11, 11);
+  //background: rgb(165, 11, 11);
   list-style: none;
   margin: 0;
   padding-left:0;
@@ -108,7 +108,7 @@
   background: rgb(0, 0, 0);
   color: rgb(255, 255, 255);
   font-family: 'Cambria';
-  font-size: medium;
+  font-size: 0.5em;
   visibility: hidden;
   float: left;
   width: 300%;
@@ -139,7 +139,7 @@
 .email{
   color: #ffffff !important;
   font-family: 'Cambria';
-  font-size: small;
+  font-size: 0.4em;
   text-transform: none;
   
 }
@@ -165,7 +165,7 @@
   //height: ;
   text-transform: capitalize;
   font-family: 'Cambria';
-  font-size: small;
+  font-size:em 
 }
 
 
@@ -176,7 +176,7 @@
     height: 13%;
     color: #ffffff;
     font-family: 'Cambria';
-    font-size:large;
+    font-size: 1em;
     padding-left: 4%;
   }
 #logo{
@@ -412,7 +412,7 @@ text-align:center;
   display: inline-block;
   border-radius: 20px;
   font-family:'DaytonaBold';
-  font-size: larger;
+  font-size: 1.3em;
   height: 35px;
 }
 #s{
@@ -459,7 +459,7 @@ text-align:center;
   //display: block;
   color: #ffffff;
   font-family: 'Daytona';
-  font-size: large;
+  font-size: 1.2em;
   //color: #61534e;
 }
 
@@ -470,7 +470,7 @@ text-align:center;
   //display: block;
   color: #3c0501;
   font-family: 'Daytona';
-  font-size: large;
+  font-size: 1.2em;
   //color: #61534e;
 }
 
@@ -483,7 +483,7 @@ text-align:center;
   text-align: center;
   color:#ffffff;
   font-family: 'Daytona';
-  font-size: large;
+  font-size: 1.2em;
 }
 .ok{
   color:#3c0501;
@@ -493,11 +493,11 @@ text-align:center;
   text-align: center;
   color:#000000;
   font-family: 'DaytonaBold';
-  font-size: large;
+  font-size: 1.2em;
 }
 .welcomet{
   text-align: center;
   color:#000000;
   font-family: 'Daytona';
-  font-size: medium;
+  font-size: 0.9em;
 }

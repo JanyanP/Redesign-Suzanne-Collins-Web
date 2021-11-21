@@ -54,7 +54,7 @@ export class SignInUpPage implements OnInit {
 registroCompleto(){
   Swal.fire({
     timerProgressBar: true,
-    timer: 3000,
+    timer: 5000,
     background: '#3c0501',
     backdrop: '3c05014d',
     icon: 'success',
@@ -74,7 +74,7 @@ loginCompleto(){
     icon: 'success',
     iconColor: '#ffffff',
     showConfirmButton: false,
-    timer: 3000,
+    timer: 5000,
     timerProgressBar: true,
     //confirmButtonColor: '#ffffff',
     //confirmButtonText: '<ion-text class="okBtn">OK</ion-text>'

@@ -55,7 +55,7 @@
     display: inline-block;
     color: black;
     font-family: 'Daytona';
-    font-size: larger;
+    font-size: 1em;
     text-align: center;
     text-decoration: none;
     width: 100%;
@@ -68,7 +68,7 @@
     font-family: 'Cambria';
     color: #000000;
     text-align: center;
-    font-size: medium;
+    font-size: 0.9em;
     border-radius: 25px;
     padding: 10%;
     position: absolute;
@@ -84,7 +84,7 @@
     font-family: 'Cambria';
     color: #000000;
     text-align: center;
-    font-size: medium;
+    font-size: 0.9em;
     border-radius: 25px;
     padding: 10%;
     position: absolute;
@@ -100,7 +100,7 @@
     font-family: 'Cambria';
     color: #000000;
     text-align: center;
-    font-size: medium;
+    font-size: 0.9em;
     border-radius: 25px;
     padding: 10%;
     position: absolute;
@@ -114,8 +114,8 @@
     background-color: #fed703;
     font-family: 'Cambria';
     color: #000000;
-    text-align: center;
-    font-size: medium;
+    text-align: 0.9em;
+    font-size: 0.9em;
     border-radius: 25px;
     padding: 10%;
     position: absolute;
@@ -173,7 +173,7 @@
 #inputCont{
     width: 30%;
     text-decoration: none;
-    font-size: medium;
+    //font-size: 3em;
     font-family: 'Cambria';
     margin-left: 35%;
     margin-top: 1%;
@@ -184,7 +184,7 @@
     margin-top: 33%;
     font-family: 'DaytonaBold';
     font-weight: bold;
-    font-size: xx-large;
+    font-size: 2em;
     line-height: normal;
     word-spacing: normal;
     text-align:center;
@@ -200,7 +200,7 @@
     height: 4%;
     text-align: center;
     font-family: 'DaytonaBold';
-    font-size: larger;
+    font-size: 1em;
     margin-left: 57%;
     margin-top: 0%;
     background-color: #fed703;
@@ -213,5 +213,5 @@
 .justUsers{
     color: #FFFFFF;
     font-family: 'Cambria';
-    font-size: small;
+    font-size: 0.7em;
 }

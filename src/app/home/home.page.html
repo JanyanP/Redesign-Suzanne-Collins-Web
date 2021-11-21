@@ -1,5 +1,5 @@
 
-<ion-header [fullscreen]="true" id="menu">
+<ion-header id="menu">
   <nav id="navigation" class="site-navigation" role="navigation">
     <ul class="menu">
       <li class="menu-item"><ion-img src="assets/image/Logo1.png"></ion-img></li>
@@ -40,26 +40,34 @@
   <div id="container">
       
       <div class="divwelcome">
-        <ion-button fill="clear" class="welcomeBtn" (click)="welcome()">Suzzane welcomes you</ion-button>
+        <ion-button fill="clear" class="welcomeBtn" (click)="welcome()">Suzzane welcomes you ♥</ion-button>
       </div>
       
-      <ion-img src="assets/image/hunger4.jpg" id="image"></ion-img>
-      
-      <p id="title"> THE <B> BALLAD </B> OF <B> SONGBIRDS </B> AND <B> SNAKES </B></p>
-      <p id="about">
-        "I think there's natural goodness built into human beings.
-        You know you've stopped across the line into evil, and
-        it's your life's challenge to try and stay on the right side
-        of that line"
-      </p>
-      <p id="divB"> 
-        <ion-button fill="clear" id="m" class="more more1" routerLink='/songbirds-and-snakes'>
-          See more
-          <ion-img id="cmore" src="assets/icon/derecha.png"></ion-img>
-          <!--<ion-icon slot="end" name="chevron-forward-outline"></ion-icon>-->
-        </ion-button> 
-      </p>
+      <div class="coverContainer">
+        <ion-img class="coverBook" src="assets/image/hunger4.jpg" ></ion-img>
+      </div>
 
+      <div class="divEntry">
+        <div class="titleDiv"> 
+          <p id="title"> THE <B> BALLAD </B> OF <B> SONGBIRDS </B> AND <B> SNAKES </B></p>
+        </div>
+        <div class="aboutDiv">
+          <p id="about">
+            "I think there's natural goodness built into human beings.
+            You know you've stopped across the line into evil, and
+            it's your life's challenge to try and stay on the right side
+            of that line"
+          </p>
+        </div>
+        
+        <div id="divB"> 
+          <ion-button fill="clear" id="m" class="more more1" routerLink='/songbirds-and-snakes'>
+            See more
+            <ion-img id="cmore" src="assets/icon/derecha.png"></ion-img>
+            <!--<ion-icon slot="end" name="chevron-forward-outline"></ion-icon>-->
+          </ion-button> 
+        </div>
+      </div>
       
     <br><br><br><br><br><br>
   </div>

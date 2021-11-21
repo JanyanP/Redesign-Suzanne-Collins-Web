@@ -9,8 +9,9 @@ import { FirestoreService } from '../services/firestore.service';
 })
 export class GregorCodeClawPage implements OnInit {
 
-  slideOptions = {
-    initialSlide: 1,
+
+  slideOpts = {
+    initialSlide: 0,
     speed: 400
   };
 

@@ -1,5 +1,5 @@
 
-<ion-header [fullscreen]="true" id="menu">
+<ion-header id="menu">
   <nav id="navigation" class="site-navigation" role="navigation">
     <ul class="menu">
       <li class="menu-item"><ion-img src="assets/image/Logo1.png"></ion-img></li>
@@ -132,7 +132,7 @@
         <ion-label position="floating">Write your Q</ion-label>
         <ion-textarea rows=6 name="q" id="q" [(ngModel)]="q"></ion-textarea>
       </ion-item>
-      <ion-text class="justUsers">Available if signed in</ion-text>
+      <ion-text class="justUsers">*Available if signed in</ion-text>
     </div>
     <ion-button id="send" fill="clear" class="send" (click)="guardarPregunta()">SEND</ion-button>
   </div>
