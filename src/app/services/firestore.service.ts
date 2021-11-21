@@ -6,7 +6,6 @@ import { AngularFireAuth } from '@angular/fire/compat/auth';
 import { AngularFirestore } from '@angular/fire/compat/firestore';
 import Swal from 'sweetalert2/dist/sweetalert2.js';
 
-
 @Injectable({
   providedIn: 'root'
 })

@@ -18,13 +18,9 @@ export class SignInUpPage implements OnInit {
   public passwordS: any;
   public emailS: any;
 
- // user: User = new User();
- // summit= false;
-
   passwordType = 'password';
   passwordShown=false;
 
-  //userLogged: any;
   userLogged= this.userservice.getUserLogged();
 
   constructor(private userservice: FirestoreService, private navCtr: NavController){ }
