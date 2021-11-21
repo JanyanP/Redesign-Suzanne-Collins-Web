@@ -28,11 +28,11 @@ constructor(private userservice: FirestoreService){ }
   welcomeAlert(){
     Swal.fire({
       html: '<div><ion-text class="welcomeT">Welcome!</ion-text><br><br>'+
-      '<ion-text class="welcomet">Hi! Thanks for visiting my website. Here’s a picture of me'+
-      'with a rat in Central Park. If you’ve read my fantasy'+
-       'series, The Underland Chronicles, you will have a clue'
-        +'as to why I chose this photo. If not, you may want'
-        + 'to click around and find out a little more about my'
+      '<ion-text class="welcomet">Hi! Thanks for visiting my website. Here’s a picture of me '+
+      'with a rat in Central Park. If you’ve read my fantasy '+
+       'series, The Underland Chronicles, you will have a clue '
+        +'as to why I chose this photo. If not, you may want '
+        + 'to click around and find out a little more about my '
          + 'books.</ion-text></div>',
       background: '#ffffff',
       //backdrop: '3c05014d',
